@@ -1,0 +1,2 @@
+﻿DROP TABLE IF EXISTS vacancy;
+DROP TABLE IF EXISTS booking;

@@ -1,0 +1,2 @@
+BOOK guest_name checkin_date checkout_date phone email credit_card
+VACANCY checkin_date checkout_date

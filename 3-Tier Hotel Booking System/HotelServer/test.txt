@@ -1,0 +1,2 @@
+BOOK guest_name='veebadouche',checkin_year=2016,checkin_month=07,checkin_day=15,checkout_year=2016,checkout_month=07,checkout_day=16,phone=045207789,email=veeba@douche.net,credit_card=123456789
+VACANCY checkin_date='2016-07-15',checkout_date='2016-07-16'

@@ -1,0 +1,2 @@
+BOOK guest_name checkin_year checkin_month checkin_day checkout_year checkout_month checkout_day phone email credit_card
+VACANCY checkin_year checkin_month checkin_day checkout_year checkout_month checkout_day
