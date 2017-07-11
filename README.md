@@ -11,3 +11,7 @@ Some of my programming projects during my postgraduate degree at Monash.
 * **Multi-threaded Sum of Squares**: 
 
 > A multi-threaded program to compute the sum of squares. (_C_)
+
+* **Postgraduate IT Industry Experience Project**
+
+> Repository available here: https://bitbucket.org/potato108p/potato-cyclesafe/overview
