@@ -14,4 +14,4 @@ Some of my programming projects during my postgraduate degree at Monash.
 
 * **Postgraduate IT Industry Experience Project**
 
-> Repository available here: https://bitbucket.org/potato108p/potato-cyclesafe/overview
+> Repository available here: https://bitbucket.org/potato108p/potato-cyclesafe
