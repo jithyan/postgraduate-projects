@@ -1,0 +1,9 @@
+Fields given in assignment is different to sample?
+
+C:\tools\Anaconda3\python.exe C:\tools\Anaconda3\cwp.py C:\tools\Anaconda3 C:\tools\Anaconda3\python.exe C:\tools\Anaconda3\Scripts\jupyter-notebook-script.py "D:/OneDrive/Documents/Monash/Data Science/FIT5196 - Data Wrangling/"
+
+Notes:
+* Make sure you document what you do every week.
+
+Grant id is concat of country code and doc-number. You can also use a file name.
+patent_title is "invention-title".
