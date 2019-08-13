@@ -1,0 +1,1051 @@
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03" file="US10361332-20190723.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20190709" date-publ="20190723">
+   <us-bibliographic-data-grant>
+      <publication-reference>
+         <document-id>
+            <country>US</country>
+            <doc-number>10361332</doc-number>
+            <kind>B2</kind>
+            <date>20190723</date>
+         </document-id>
+      </publication-reference>
+      <application-reference appl-type="utility">
+         <document-id>
+            <country>US</country>
+            <doc-number>16057419</doc-number>
+            <date>20180807</date>
+         </document-id>
+      </application-reference>
+      <us-application-series-code>16</us-application-series-code>
+      <us-term-of-grant>
+         <disclaimer>
+            <text>This patent is subject to a terminal disclaimer.</text>
+         </disclaimer>
+      </us-term-of-grant>
+      <classifications-ipcr>
+         <classification-ipcr>
+            <ipc-version-indicator>
+               <date>20120101</date>
+            </ipc-version-indicator>
+            <classification-level>A</classification-level>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>31</main-group>
+            <subgroup>075</subgroup>
+            <symbol-position>F</symbol-position>
+            <classification-value>I</classification-value>
+            <action-date>
+               <date>20190723</date>
+            </action-date>
+            <generating-office>
+               <country>US</country>
+            </generating-office>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+         </classification-ipcr>
+         <classification-ipcr>
+            <ipc-version-indicator>
+               <date>20060101</date>
+            </ipc-version-indicator>
+            <classification-level>A</classification-level>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>31</main-group>
+            <subgroup>0352</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>I</classification-value>
+            <action-date>
+               <date>20190723</date>
+            </action-date>
+            <generating-office>
+               <country>US</country>
+            </generating-office>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+         </classification-ipcr>
+         <classification-ipcr>
+            <ipc-version-indicator>
+               <date>20110101</date>
+            </ipc-version-indicator>
+            <classification-level>A</classification-level>
+            <section>B</section>
+            <class>82</class>
+            <subclass>Y</subclass>
+            <main-group>20</main-group>
+            <subgroup>00</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>I</classification-value>
+            <action-date>
+               <date>20190723</date>
+            </action-date>
+            <generating-office>
+               <country>US</country>
+            </generating-office>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+         </classification-ipcr>
+         <classification-ipcr>
+            <ipc-version-indicator>
+               <date>20120101</date>
+            </ipc-version-indicator>
+            <classification-level>A</classification-level>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>31</main-group>
+            <subgroup>0725</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>I</classification-value>
+            <action-date>
+               <date>20190723</date>
+            </action-date>
+            <generating-office>
+               <country>US</country>
+            </generating-office>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+         </classification-ipcr>
+         <classification-ipcr>
+            <ipc-version-indicator>
+               <date>20120101</date>
+            </ipc-version-indicator>
+            <classification-level>A</classification-level>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>31</main-group>
+            <subgroup>0735</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>I</classification-value>
+            <action-date>
+               <date>20190723</date>
+            </action-date>
+            <generating-office>
+               <country>US</country>
+            </generating-office>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+         </classification-ipcr>
+         <classification-ipcr>
+            <ipc-version-indicator>
+               <date>20120101</date>
+            </ipc-version-indicator>
+            <classification-level>A</classification-level>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>31</main-group>
+            <subgroup>078</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>I</classification-value>
+            <action-date>
+               <date>20190723</date>
+            </action-date>
+            <generating-office>
+               <country>US</country>
+            </generating-office>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+         </classification-ipcr>
+      </classifications-ipcr>
+      <classifications-cpc>
+         <main-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>H</section>
+               <class>01</class>
+               <subclass>L</subclass>
+               <main-group>31</main-group>
+               <subgroup>075</subgroup>
+               <symbol-position>F</symbol-position>
+               <classification-value>I</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+         </main-cpc>
+         <further-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>B</section>
+               <class>82</class>
+               <subclass>Y</subclass>
+               <main-group>20</main-group>
+               <subgroup>00</subgroup>
+               <symbol-position>L</symbol-position>
+               <classification-value>I</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>H</section>
+               <class>01</class>
+               <subclass>L</subclass>
+               <main-group>31</main-group>
+               <subgroup>0352</subgroup>
+               <symbol-position>L</symbol-position>
+               <classification-value>I</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>H</section>
+               <class>01</class>
+               <subclass>L</subclass>
+               <main-group>31</main-group>
+               <subgroup>035236</subgroup>
+               <symbol-position>L</symbol-position>
+               <classification-value>I</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>H</section>
+               <class>01</class>
+               <subclass>L</subclass>
+               <main-group>31</main-group>
+               <subgroup>078</subgroup>
+               <symbol-position>L</symbol-position>
+               <classification-value>I</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>H</section>
+               <class>01</class>
+               <subclass>L</subclass>
+               <main-group>31</main-group>
+               <subgroup>0725</subgroup>
+               <symbol-position>L</symbol-position>
+               <classification-value>I</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>H</section>
+               <class>01</class>
+               <subclass>L</subclass>
+               <main-group>31</main-group>
+               <subgroup>0735</subgroup>
+               <symbol-position>L</symbol-position>
+               <classification-value>I</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>Y</section>
+               <class>02</class>
+               <subclass>E</subclass>
+               <main-group>10</main-group>
+               <subgroup>544</subgroup>
+               <symbol-position>L</symbol-position>
+               <classification-value>A</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>Y</section>
+               <class>02</class>
+               <subclass>E</subclass>
+               <main-group>10</main-group>
+               <subgroup>548</subgroup>
+               <symbol-position>L</symbol-position>
+               <classification-value>A</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+         </further-cpc>
+      </classifications-cpc>
+      <invention-title id="d2e51">Reduced band gap absorber for solar cells</invention-title>
+      <us-references-cited>
+         <us-citation>
+            <patcit num="00001">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>4688068</doc-number>
+                  <kind>A</kind>
+                  <name>Chaffin et al.</name>
+                  <date>19870800</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00002">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>4756074</doc-number>
+                  <kind>A</kind>
+                  <name>Lewis</name>
+                  <date>19880700</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00003">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>5021099</doc-number>
+                  <kind>A</kind>
+                  <name>Kim et al.</name>
+                  <date>19910600</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00004">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>5407491</doc-number>
+                  <kind>A</kind>
+                  <name>Freundlich et al.</name>
+                  <date>19950400</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00005">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>5496415</doc-number>
+                  <kind>A</kind>
+                  <name>Barnham</name>
+                  <date>19960300</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00006">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>5800630</doc-number>
+                  <kind>A</kind>
+                  <name>Vilela et al.</name>
+                  <date>19980900</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00007">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>5851310</doc-number>
+                  <kind>A</kind>
+                  <name>Freundlich et al.</name>
+                  <date>19981200</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00008">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>5853497</doc-number>
+                  <kind>A</kind>
+                  <name>Lillington et al.</name>
+                  <date>19981200</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00009">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>5935345</doc-number>
+                  <kind>A</kind>
+                  <name>Kuznicki</name>
+                  <date>19990800</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00010">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6147296</doc-number>
+                  <kind>A</kind>
+                  <name>Freundlich</name>
+                  <date>20001100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00011">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6150603</doc-number>
+                  <kind>A</kind>
+                  <name>Karam et al.</name>
+                  <date>20001100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00012">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6150604</doc-number>
+                  <kind>A</kind>
+                  <name>Freundlich et al.</name>
+                  <date>20001100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00013">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6255580</doc-number>
+                  <kind>B1</kind>
+                  <name>Karam et al.</name>
+                  <date>20010700</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00014">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6316715</doc-number>
+                  <kind>B1</kind>
+                  <name>King et al.</name>
+                  <date>20011100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00015">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6340788</doc-number>
+                  <kind>B1</kind>
+                  <name>King et al.</name>
+                  <date>20020100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00016">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6372980</doc-number>
+                  <kind>B1</kind>
+                  <name>Freundlich</name>
+                  <date>20020400</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00017">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6380601</doc-number>
+                  <kind>B1</kind>
+                  <name>Ermer et al.</name>
+                  <date>20020400</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00018">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>6586669</doc-number>
+                  <kind>B2</kind>
+                  <name>King et al.</name>
+                  <date>20030700</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00019">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>2002/0117675</doc-number>
+                  <kind>A1</kind>
+                  <name>Mascarenhas</name>
+                  <date>20020800</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00020">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>2002/0195137</doc-number>
+                  <kind>A1</kind>
+                  <name>King et al.</name>
+                  <date>20021200</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00021">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>2003/0070707</doc-number>
+                  <kind>A1</kind>
+                  <name>King et al.</name>
+                  <date>20030400</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00022">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>2003/0089392</doc-number>
+                  <kind>A1</kind>
+                  <name>Rohr et al.</name>
+                  <date>20030500</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00023">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>2003/0145884</doc-number>
+                  <kind>A1</kind>
+                  <name>King et al.</name>
+                  <date>20030800</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00024">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>2004/0065363</doc-number>
+                  <kind>A1</kind>
+                  <name>Fetzer et al.</name>
+                  <date>20040400</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00025">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>2005/0247339</doc-number>
+                  <kind>A1</kind>
+                  <name>Barnham et al.</name>
+                  <date>20051100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00026">
+               <othercit>European Examination Report dated Jul. 23, 2018 for European Patent Application No. 06077166.4.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00027">
+               <othercit>Jackrel, David, et al. &#x201c;MBE grown GaInNAs solar cells for multijunction applications&#x201d;, Conference Record of the IEEE Photovoltaic Specialists Conference, Feb. 2005, pp. 854-857.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00028">
+               <othercit>Kim, C-Y., et al., &#x201c;Improvement of short-circuit current of InP/InGaAsP/InP double heterojunction solar cells&#x201d;, Electronics Letters, Apr. 28, 2005, pp. 1-2, vol. 41, No. 9.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00029">
+               <othercit>Extended European Search Report dated Apr. 2, 2014 for European Patent Application No. 06077166.4.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00030">
+               <othercit>Corkish, R., et al., &#x201c;Dark Currents in Double-Heterostructure and Quantum-Well Solar Cells&#x201d;, Conference Record of the 26th IEEE Photovoltaic Specialists Conference&#x2014;1997. PVSC '97, Anaheim, CA, Sep. 29-Oct. 3, 1997; IEEE Photovoltaic Specialists Conference, New York, NY: IEEE, US, Sep. 29, 1997, pp. 923-926, XP010268026.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00031">
+               <othercit>Ramey, S.M., et al., &#x201c;Modeling of Multiple-Quantum-Well Solar Cells Including Capture, Escape, and Recombination of Phtoexcited Carriers in Quantum Wells&#x201d;, IEEE Transactions on Electron Devices, May 2003, pp. 1179-1188, vol. 50, No. 5, XP055109977.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00032">
+               <othercit>&#x201c;Quantum Confinement&#x201d;, accessed from http://phycomp.technion.ac.il/&#x2dc;anastasy/thesis/node10.html on Jul. 25, 2012.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00033">
+               <othercit>EPO Communication dated Jan. 18, 2018 for European application No. 06077166.4.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00034">
+               <othercit>Lade S Jet al: &#x201c;A revised ideal model for AlGaAs/GaAs quantum well solar cells&#x201d;, Microelectronics Journal, vol. 35, No. 5, May 1, 2004 (May 1, 2004), pp. 401-410.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00035">
+               <othercit>Kim N. P., et al., &#x201c;High efficiency GaAs/CuInSe2 tandem junction solar cells&#x201d;, Sep. 26, 1988 (Sep. 26, 1988), pp. 157-161.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+      </us-references-cited>
+      <number-of-claims>9</number-of-claims>
+      <us-exemplary-claim>1</us-exemplary-claim>
+      <us-field-of-classification-search>
+         <classification-cpc-text>H01L 31/075</classification-cpc-text>
+         <classification-cpc-text>H01L 31/035236</classification-cpc-text>
+         <classification-cpc-text>H01L 31/0352</classification-cpc-text>
+         <classification-cpc-text>H01L 31/0735</classification-cpc-text>
+         <classification-cpc-text>H01L 31/078</classification-cpc-text>
+         <classification-cpc-text>H01L 31/0725</classification-cpc-text>
+      </us-field-of-classification-search>
+      <figures>
+         <number-of-drawing-sheets>8</number-of-drawing-sheets>
+         <number-of-figures>8</number-of-figures>
+      </figures>
+      <us-related-documents>
+         <continuation>
+            <relation>
+               <parent-doc>
+                  <document-id>
+                     <country>US</country>
+                     <doc-number>11305967</doc-number>
+                     <date>20051219</date>
+                  </document-id>
+                  <parent-grant-document>
+                     <document-id>
+                        <country>US</country>
+                        <doc-number>10069026</doc-number>
+                     </document-id>
+                  </parent-grant-document>
+               </parent-doc>
+               <child-doc>
+                  <document-id>
+                     <country>US</country>
+                     <doc-number>16057419</doc-number>
+                  </document-id>
+               </child-doc>
+            </relation>
+         </continuation>
+         <related-publication>
+            <document-id>
+               <country>US</country>
+               <doc-number>20180351021</doc-number>
+               <kind>A1</kind>
+               <date>20181206</date>
+            </document-id>
+         </related-publication>
+      </us-related-documents>
+      <us-parties>
+         <us-applicants>
+            <us-applicant sequence="001" app-type="applicant" designation="us-only" applicant-authority-category="assignee">
+               <addressbook>
+                  <orgname>The Boeing Company</orgname>
+                  <address>
+                     <city>Chicago</city>
+                     <state>IL</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+               <residence>
+                  <country>US</country>
+               </residence>
+            </us-applicant>
+            <us-applicant sequence="002" app-type="applicant" designation="us-only" applicant-authority-category="legal-representative">
+               <addressbook>
+                  <last-name>Joslin</last-name>
+                  <first-name>Sara R.</first-name>
+                  <address>
+                     <city>Valley Village</city>
+                     <state>CA</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+               <residence>
+                  <country>US</country>
+               </residence>
+            </us-applicant>
+         </us-applicants>
+         <inventors>
+            <inventor sequence="001" designation="us-only">
+               <addressbook>
+                  <last-name>Fetzer</last-name>
+                  <first-name>Christopher M.</first-name>
+                  <address>
+                     <city>Saugus</city>
+                     <state>CA</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+            </inventor>
+            <inventor sequence="002" designation="us-only">
+               <addressbook>
+                  <last-name>Krut</last-name>
+                  <first-name>Dmitri D.</first-name>
+                  <address>
+                     <city>Encino</city>
+                     <state>CA</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+            </inventor>
+            <inventor sequence="003" designation="us-only">
+               <addressbook>
+                  <last-name>Joslin</last-name>
+                  <first-name>David E.</first-name>
+                  <address>
+                     <city>Valley Village</city>
+                     <state>CA</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+            </inventor>
+            <inventor sequence="004" designation="us-only">
+               <addressbook>
+                  <last-name>King</last-name>
+                  <first-name>Richard R.</first-name>
+                  <address>
+                     <city>Thousand Oaks</city>
+                     <state>CA</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+            </inventor>
+         </inventors>
+         <agents>
+            <agent sequence="01" rep-type="attorney">
+               <addressbook>
+                  <orgname>Gates &#x26; Cooper LLP</orgname>
+                  <address>
+                     <country>unknown</country>
+                  </address>
+               </addressbook>
+            </agent>
+         </agents>
+      </us-parties>
+      <assignees>
+         <assignee>
+            <addressbook>
+               <orgname>THE BOEING COMPANY</orgname>
+               <role>02</role>
+               <address>
+                  <city>Chicago</city>
+                  <state>IL</state>
+                  <country>US</country>
+               </address>
+            </addressbook>
+         </assignee>
+      </assignees>
+      <examiners>
+         <primary-examiner>
+            <last-name>Mowla</last-name>
+            <first-name>Golam</first-name>
+            <department>1721</department>
+         </primary-examiner>
+      </examiners>
+   </us-bibliographic-data-grant>
+   <abstract id="abstract">
+      <p id="p-0001" num="0000">Methods and apparatuses for a dual heterojunction multijunction solar cell are disclosed. A method in accordance with the present invention comprises growing a base material for a solar cell, growing at least one dual heterojunction on the base material, and growing an emitter on the at least one dual heterojunction. An apparatus in accordance with the present invention comprises a substrate, and a first subcell, coupled to the substrate, wherein the first subcell comprises a base region, coupled to the substrate, an emitter region, and at least one dual heterojunction, coupled between the base region and the emitter region, wherein the at least one dual heterojunction has a lower bandgap than the emitter region.</p>
+   </abstract>
+   <drawings id="DRAWINGS">
+      <figure id="Fig-EMI-D00000" num="00000">
+         <img id="EMI-D00000" he="179.32mm" wi="175.01mm" file="US10361332-20190723-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00001" num="00001">
+         <img id="EMI-D00001" he="225.81mm" wi="144.53mm" file="US10361332-20190723-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00002" num="00002">
+         <img id="EMI-D00002" he="204.05mm" wi="147.49mm" file="US10361332-20190723-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00003" num="00003">
+         <img id="EMI-D00003" he="215.90mm" wi="173.91mm" file="US10361332-20190723-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00004" num="00004">
+         <img id="EMI-D00004" he="207.94mm" wi="190.42mm" file="US10361332-20190723-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00005" num="00005">
+         <img id="EMI-D00005" he="216.24mm" wi="202.01mm" file="US10361332-20190723-D00005.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00006" num="00006">
+         <img id="EMI-D00006" he="176.78mm" wi="212.85mm" file="US10361332-20190723-D00006.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00007" num="00007">
+         <img id="EMI-D00007" he="185.84mm" wi="200.07mm" file="US10361332-20190723-D00007.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00008" num="00008">
+         <img id="EMI-D00008" he="197.36mm" wi="155.70mm" file="US10361332-20190723-D00008.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+   </drawings>
+   <description id="description">
+      <?RELAPP description="Other Patent Relations" end="lead"?>
+      <heading id="h-0001" level="1">CROSS REFERENCE TO RELATED APPLICATIONS</heading>
+      <p id="p-0002" num="0001">This application is a continuation under 35 U.S.C. Section 120 of the following and commonly-assigned application:</p>
+      <p id="p-0003" num="0002">U.S. Utility application Ser. No. 11/305,967, filed on Dec. 19, 2005, by Christopher Fetzer, Dmitri Krut, David Joslin, and Richard King, entitled &#x201c;REDUCED BAND GAP ABSORBER FOR SOLAR CELLS,&#x201d; now U.S. Pat. No. 10,069,026, issued Sep. 4, 2018;</p>
+      <p id="p-0004" num="0003">which application is incorporated by reference herein.</p>
+      <?RELAPP description="Other Patent Relations" end="tail"?>
+      <?GOVINT description="Government Interest" end="lead"?>
+      <heading id="h-0002" level="1">STATEMENT REGARDING FEDERALLY SPONSORED RESEARCH OR DEVELOPMENT</heading>
+      <p id="p-0005" num="0004">This invention was first conceived and demonstrated with Government support under Contract No. F29601-98-2-0207 awarded by the United States Air Force. The Government has certain rights in this invention.</p>
+      <?GOVINT description="Government Interest" end="tail"?>
+      <?BRFSUM description="Brief Summary" end="lead"?>
+      <heading id="h-0003" level="1">BACKGROUND OF THE INVENTION</heading>
+      <heading id="h-0004" level="1">1. Field of the Invention</heading>
+      <p id="p-0006" num="0005">The present invention relates generally to solar cells, and, in particular, to a method, apparatus, and article of manufacture of a reduced band gap absorber for solar cells.</p>
+      <heading id="h-0005" level="1">2. Description of the Related Art</heading>
+      <p id="p-0007" num="0006">Solar energy created through the photovoltaic effect is the main source of power for most commercial and government spacecraft. The amount of power generated by an array of solar cells is limited by the launch volume and launch weight. These restrictions limit the capability of the spacecraft. Similarly, any terrestrial solar cells are limited by the size of an array that can be installed in a given installation.</p>
+      <p id="p-0008" num="0007">To be able to increase payload capability, or power delivery capability, the power per unit area for the solar cell array must be increased. Increasing the efficiency of the solar cell is of primary importance for enabling near-earth missions. The dominant solar cell technology for this application is a combination of subcells comprising Gallium Indium Phosphide (GaInP), Gallium Arsenide (GaAs), and Germanium (Ge), which is typically called a triple-junction, or &#x201c;3J&#x201d;, device.</p>
+      <p id="p-0009" num="0008">The current best efficiency of a 3J device at the Beginning Of Life (BOL) is 28.6%, which degrades over time to an End Of Life (EOL) final percentage. Solar cells used in space must survive for up to fifteen years in an environment rich in atomic oxygen and energetic sub-atomic particles, which degrades the solar cells significantly. The general objective of any change in the design of solar cells is to reduce the cost of the device, the BOL efficiency, or to decrease the rate of degradation such that the EOL efficiency is higher as well.</p>
+      <p id="p-0010" num="0009">Several approaches have been used to try to make solar cells more efficient or less costly. One approach is to use a multiple quantum-well (MQW) approach, which makes the efficiency go up but also makes the cells much more expensive because of the tolerances required to make an MQW structure. Other approaches use layer thickening, additional subcell structures, or mismatch of the subcell materials, each of which adds to the cost as well as the weight of the cell, limiting the usefulness of such approaches.</p>
+      <p id="p-0011" num="0010">It can be seen, then, that there is a need in the art for more efficient solar cells.</p>
+      <heading id="h-0006" level="1">SUMMARY OF THE INVENTION</heading>
+      <p id="p-0012" num="0011">To minimize the limitations in the prior art, and to minimize other limitations that will become apparent upon reading and understanding the present specification, the present invention provides methods and apparatuses for a dual heterojunction multijunction solar cell. A method in accordance with the present invention comprises growing a base material for a solar cell, growing at least one dual heterojunction on the base material, and growing an emitter on the at least one dual heterojunction.</p>
+      <p id="p-0013" num="0012">Such a method further optionally includes the base, emitter, and at least one dual heterojunction being in a top cell of a triple-junction solar cell, the at least one dual heterojunction being at least 200 angstroms in thickness, the at least one dual heterojunction being a stack of alternating low bandgap materials and barrier materials, the at least one dual heterojunction being contained within a depletion region created by the base material and the emitter, and a material for the low bandgap material being gallium arsenide.</p>
+      <p id="p-0014" num="0013">An apparatus in accordance with the present invention comprises a substrate, and a first subcell, coupled to the substrate, wherein the first subcell comprises a base region, coupled to the substrate, an emitter region, and at least one dual heterojunction, coupled between the base region and the emitter region, wherein the at least one dual heterojunction has a lower bandgap than the emitter region.</p>
+      <p id="p-0015" num="0014">Such an apparatus further optionally includes a second subcell, coupled between the substrate and the first subcell, the at least one dual heterojunction being at least 200 angstroms in thickness, the at least one dual heterojunction being a stack of alternating low bandgap material and barrier materials, the at least one dual heterojunction being contained within a depletion region created by the emitter region and the base region, and a material for the dual heterojunction being one or any alloy combination (continuous or digital) of: GaAs, GaInAs, GaInAsN, GaInAsNSb, GaInP, GaPN, GaInPN, InPN, InN, InNAs, GaInPAsN, InP, AlGaInP, GaAsP, AlGaAs, GaInAsP, GaSb, InSb, InAs, Ge, SiGe, SiGeC, SiGeSn, ZnGeAs, ZnGeSiAs, CuAlGaInS, CuAlGaInSe, as long as the alloy is of lower band gap than the host surrounding barrier layers and/or base/emitter material(s).</p>
+      <p id="p-0016" num="0015">An alternate embodiment of the present invention comprises a dual heterojunction region of at least 200 angstroms thickness, the dual heterojunction region being contained within a depletion region of the solar cell, such that the dual heterojunction region generates additional current in the solar cell by absorbing incident light within the dual heterojunction region.</p>
+      <p id="p-0017" num="0016">Such an embodiment optionally further includes the dual heterojunction region being in a top subcell of a multijunction solar cell.</p>
+      <?BRFSUM description="Brief Summary" end="tail"?>
+      <?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+      <description-of-drawings>
+         <heading id="h-0007" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+         <p id="p-0018" num="0017">Referring now to the drawings in which like reference numbers represent corresponding parts throughout:</p>
+         <p id="p-0019" num="0018">
+            <figref idref="DRAWINGS">FIG. 1</figref> illustrates a triple junction solar cell of the related art;</p>
+         <p id="p-0020" num="0019">
+            <figref idref="DRAWINGS">FIG. 2</figref> illustrates a subcell in a triple junction solar cell of the related art;</p>
+         <p id="p-0021" num="0020">
+            <figref idref="DRAWINGS">FIG. 3</figref> illustrates a subcell in accordance of the present invention;</p>
+         <p id="p-0022" num="0021">
+            <figref idref="DRAWINGS">FIG. 4</figref> illustrates a schematic of a well of lower band gap enclosed by regions of higher band gap material as used in the present invention;</p>
+         <p id="p-0023" num="0022">
+            <figref idref="DRAWINGS">FIG. 5</figref> illustrates an example of the spectral response of an AlGaInP top subcell with and without the dual heterostructures of the present invention;</p>
+         <p id="p-0024" num="0023">
+            <figref idref="DRAWINGS">FIGS. 6 and 7</figref> illustrate comparisons between a standard cell, a MQW cell, and a DH cell of the present invention; and</p>
+         <p id="p-0025" num="0024">
+            <figref idref="DRAWINGS">FIG. 8</figref> is a flowchart illustrating the steps of the present invention.</p>
+      </description-of-drawings>
+      <?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+      <?DETDESC description="Detailed Description" end="lead"?>
+      <heading id="h-0008" level="1">DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS</heading>
+      <p id="p-0026" num="0025">In the following description, reference is made to the accompanying drawings which form a part hereof, and which is shown, by way of illustration, several embodiments of the present invention. It is understood that other embodiments may be utilized and structural changes may be made without departing from the scope of the present invention.</p>
+      <p id="h-0009" num="0000">Overview</p>
+      <p id="p-0027" num="0026">The current 3J concept of GaInP/Ga(In)As/Ge is not optimal. This occurs because the layers are grown one on top of another epitaxially, and, to perform such growth, the lattice spacing of the materials must be very similar. The lattice constants for the material restricts the choices of materials available for cell combinations. Since the cells are electrically connected in series, the cell producing the lowest current will limit the current produced by the entire cell stack. As such, the current produced by each of the subcells should be approximately the same, or the excess current produced generates waste heat.</p>
+      <p id="p-0028" num="0027">The natural GaInP material in the stack produces too much current compared to the Ga(In)As subcell. Typically, the GaInP subcell is thinned to balance the current. The optimal bandgap for a balanced current from the GaInP subcell is 2.0 eV.</p>
+      <p id="p-0029" num="0028">To balance the current in the top and middle subcells of a 3J solar cell, there must be relatively thick layers of GaInP (usually Aluminum Gallium Indium Phosphide, or AlGalnP) and GaAs (usually Gallium Indium Arsenide, or GaInAs). Costwise, the thicker the layer, the more expensive it is to produce. Further, the device will weigh more, and will be more susceptible to degradation due to larger layers having a larger radiation exposure. To create a bandgap of 2.0 eV in AlGaInP, approximately four times as much material must be used to balance the current with the middle cell. As can be seen, this increases cost, weight, and decreases EOL efficiency.</p>
+      <p id="p-0030" num="0029">MQW approaches have thinned the upper layers somewhat, but the quantum well layers now must be extremely thin. Thinner layers absorb less light, and, as such, many quantum wells must be employed to allow enough light to be absorbed to generate enough gain from the device. Typically, between 10 and 100 wells of an average thickness of 75 to 100 angstroms each are used. The advantage of quantum well generation of current is that the quantum confinement raises the allowed states in the well above the bandgap of the material, which usually provides for lower dark currents and a higher voltage for the quantum well compared to the bulk material. However, the elevated energy of the allowed states results fewer long-wavelength photons that can be absorbed and lower current density, imposing a penalty for cell performance in the multiple quantum well approach. Moreover, the MQW approach is typically accompanied by a loss in open circuit voltage, as well as additional costs to create the large number of very thin layers.</p>
+      <p id="p-0031" num="0030">The present invention uses a small number of lower bandgap regions in the intrinsic or depletion region of one or more of the subcells of the solar cell. The regions are sufficiently thick so as not to be quantum well in nature, and relatively shallow such that generated carriers may easily escape. The required energy profile or substructure of the low band gap absorber region is arbitrary, which allows for lower tolerances on the fabrication of devices made using the present invention.</p>
+      <p id="p-0032" num="0031">
+         <figref idref="DRAWINGS">FIG. 1</figref> illustrates a triple junction solar cell of the related art.</p>
+      <p id="p-0033" num="0032">Cell <b>100</b> has regions where metal gridline <b>102</b> and a GaAs cap <b>102</b> cover the cell, and an Anti-Reflective (A/R) coating <b>103</b> covering the top subcell window <b>104</b>. Top subcell <b>105</b> is typically an AIGaInP subcell, which has a Back Surface Field (BSF) <b>106</b>. Top Tunnel Junction (TJ1) <b>107</b> is resident between the top cell <b>105</b> and the middle subcell window <b>108</b>. Middle subcell <b>109</b> is typically GaInAs, or GaSbAs, which has a Tunnel Junction (TJ2) <b>110</b> between subcell <b>109</b> and a buffer layer <b>111</b>. A nucleation layer <b>112</b> is placed between buffer layer <b>111</b> and the substrate <b>113</b>, which is typically Germanium.</p>
+      <p id="p-0034" num="0033">Incident light <b>114</b> strikes top surface <b>116</b> and is converted to electrical voltage and current in the top subcell <b>105</b>, middle subcell <b>109</b>, and the substrate <b>113</b>. The top subcell <b>105</b>, middle subcell <b>109</b>, and substrate <b>113</b> each typically convert different wavelengths of light into electrical energy, and the subcells <b>105</b> and <b>109</b> and substrate <b>113</b> are chosen such that the wavelengths of light overlap to some degree to increase the efficiency of the solar cell <b>100</b>.
+      </p>
+      <p id="p-0035" num="0034">
+         <figref idref="DRAWINGS">FIG. 2</figref> illustrates a subcell in a triple junction solar cell of the related art.</p>
+      <p id="p-0036" num="0035">Subcell <b>200</b> shows an upper structure <b>201</b>, a subcell window <b>202</b>, an emitter <b>203</b>, an intrinsic or depletion region <b>204</b>, a base region <b>205</b>, a BSF <b>206</b>, and a lower structure <b>207</b>. Although shown as an n-type on p-type subcell <b>200</b>, a p-type on n-type subcell <b>200</b> can be made without departing from the scope of the present invention. <figref idref="DRAWINGS">FIG. 2</figref> illustrates a typical top subcell <b>105</b>, or middle subcell <b>109</b>, with the adjoining subcell windows, BSF, etc. used for such subcells in a solar cell <b>100</b>.
+      </p>
+      <p id="p-0037" num="0036">The problem with the related art is that height h <b>208</b> of base region <b>205</b> increases exponentially for top subcell <b>105</b>. This effect occurs because the solar cell <b>100</b> is connected in series. The lowest current generating portion of solar cell <b>100</b>, i.e., one of subcell <b>105</b>,         <b>109</b>, and substrate <b>113</b>, limits the current produced for the overall solar cell <b>100</b>. The top subcell <b>105</b> is the limiting factor in terms of current generation, and, as such, the top subcell <b>105</b> must be made thicker in height <b>208</b>. 2.0 eV is the optimal bandgap by theory for top subcell <b>105</b>. To produce a 2.0 eV top subcell <b>105</b>, it must be thicker, which takes longer to grow and thus becomes more costly. Further, these thicker cells are more easily degraded by space environments, which depend on minority carrier travel distance through the cell. The thicker the cell, the farther minority carriers must travel. A degraded lattice structure prevents minority carriers from travelling very far without scattering or recombination.</p>
+      <p id="h-0010" num="0000">Insertion of Low Band Gap Regions</p>
+      <p id="p-0038" num="0037">
+         <figref idref="DRAWINGS">FIG. 3</figref> illustrates a subcell in accordance of the present invention.</p>
+      <p id="p-0039" num="0038">Subcell <b>300</b> is shown with an upper structure <b>310</b>, subcell window <b>302</b>, emitter <b>303</b>, low bandgap material <b>304</b>, barrier material <b>305</b>, low bandgap material <b>306</b>, barrier material <b>307</b>, base region <b>308</b>, BSF <b>309</b>, and lower structure <b>310</b>. Rather than a single intrinsic region <b>204</b> as shown in <figref idref="DRAWINGS">FIG. 2</figref>, the present invention uses a stack of low band gap materials in the depletion region between emitter <b>303</b> and base <b>308</b> to build up the 2.0 eV top subcell (or any other subcell in solar cell <b>300</b>). There can be a larger or smaller number of low band gap materials <b>304</b>,         <b>306</b> in a periodic or non-periodic structure, having a typical thickness w <b>312</b>, and a larger or smaller number of barrier material regions <b>305</b>,         <b>307</b> having a typical thickness b <b>314</b>, resident on top of base <b>308</b> having a thickness h <b>316</b>. Each pair of low bandgap material <b>304</b>/barrier material <b>306</b> is typically referred to as a Dual Heterostructure (DH).</p>
+      <p id="p-0040" num="0039">Each low band gap material <b>304</b>,         <b>306</b> is a well layer, where w <b>312</b> is the depth of the well. For quantum well structures, w <b>312</b> combined with b <b>314</b> is typically less than 200 angstroms. However, in the present invention, w <b>312</b> combined with b <b>314</b> is greater than 200 angstroms, and typically a few hundred angstroms, because the wells are not sufficiently thin to entrap a generated electron and change its quantum character, thus, there is no quantum confinement of generated electrons in specific energy states in layers <b>304</b> and <b>306</b>. The present invention allows for the building of low band-gap regions (e.g. <b>304</b>,         <b>306</b>) in the depletion region between emitter <b>303</b> and base <b>308</b>, where these low band gap regions absorb light below the bandgap of the higher bandgap base <b>308</b> material. The current that is produced by generating electron-hole pairs as carriers, which are then swept from the depletion region (where layers <b>304</b>-         <b>307</b> are) and collected at the higher band-gap emitter <b>303</b> and base <b>308</b> materials.</p>
+      <p id="p-0041" num="0040">
+         <figref idref="DRAWINGS">FIG. 4</figref> illustrates a schematic of a well of lower band gap enclosed by regions of higher band gap material as used in the present invention.</p>
+      <p id="p-0042" num="0041">The width w <b>312</b> of the absorber region (low band gap regions <b>304</b> and <b>306</b>) has a depth <b>402</b>. This depth can represent the difference to either the conduction band or the valence band of the material to show the confinement in the absorber regions <b>304</b> and <b>306</b>. For a GaAs DH in an AlGaAs material with a depth of approximately 100 meV, the thickness is about 200 angstroms. At lower thicknesses, the DH begins acting like a quantum well, with the energy level of the lower bound state in the well becoming substantially higher than be bandgap of the well material. In the DH considered here, the influence of the quantum effect on the lowest energy transition in the well becomes indistinguishable from the bandgap, such that the lower bound state is within a fraction of the available thermal energy. When the DH is too thick, the quasi-Fermi levels in the depletion region may collapse to that of the low bandgap material and there will be a voltage drop in the open circuit voltage of the device <b>300</b>. Further, the low bandgap regions (<b>304</b>,         <b>306</b> and the barrier materials <b>305</b>,         <b>307</b>) must be fully contained within the depletion region created by emitter <b>303</b> and base region <b>308</b>. The depletion region is dependent upon the dopant densities of emitter <b>303</b> and base <b>308</b>; as long as the DH pairs are located within the depletion region, the electric field in the depletion region accelerates the charges out of the DH and aids in their collection in the emitter <b>303</b> and base <b>308</b>. Without the electric field, the generated carriers will remain in the DH and generate only dark current, which lowers the voltage and does not contribute to the current generated by the device <b>300</b>.
+      </p>
+      <heading id="h-0011" level="1">Experimental Results</heading>
+      <p id="p-0043" num="0042">
+         <figref idref="DRAWINGS">FIG. 5</figref> illustrates an example of the spectral response of an AlGaInP top subcell with and without the dual heterostructures of the present invention.</p>
+      <p id="p-0044" num="0043">Chart <b>500</b> shows the quantum efficiency on the x axis versus wavelength on the y-axis, with squares representing the efficiency of a related art 3J cell, and circles representing the efficiency of a 3J cell with the Dual Heterostructures of the present invention. The DHs used in the structure were 250 angstroms thick, and there were three periods of DHs used in this experiment. Note that the solid line <b>502</b> shows the difference in efficiency of the device with the DHs present versus the related art 3J solar cell.</p>
+      <p id="p-0045" num="0044">The related art solar cell has an AIGaInP top subcell (shown as element <b>105</b> in <figref idref="DRAWINGS">FIG. 1</figref>) having a bandgap of 1.98 eV and the base thickness (shown as base <b>205</b> in <figref idref="DRAWINGS">FIG. 2</figref>) having a thickness <b>208</b> of 7000 angstroms. Note that there is not a change in absorption coefficient in changing to a quantum state with an inflection or step function density of states, and, as such, the DHs are not acting as quantum wells. There is a net gain of 0.550 mA/cm2 for the addition of the absorber region. This net gain came at the addition of approximately 1000 angstroms of thickness. To achieve a similar gain by traditional methods, eight quantum wells of 90 angstroms each could be added, or the base layer <b>205</b> could be thickened by about 5000 to 7000 angstroms of thickness. Therefore, the present invention saves a net of approximately 4000 to 6000 angstroms of material. Since this material accounts for approximately 50 percent of the growth cost, the savings is approximately 25 percent of the total growth cost to produce a 1.98 eV AIGaInP top subcell <b>300</b> over a similar top subcell <b>200</b>.
+      </p>
+      <p id="p-0046" num="0045">
+         <figref idref="DRAWINGS">FIGS. 6 and 7</figref> illustrate comparisons between a standard cell, a MQW cell, and a DH cell of the present invention.</p>
+      <p id="p-0047" num="0046">
+         <figref idref="DRAWINGS">FIG. 6</figref> shows the open circuit voltage for a standard cell <b>600</b>, for an MQW cell <b>602</b>, and a DH cell <b>604</b>. The average of 1.527 Volts for a standard cell <b>600</b>, 1.517 Volts for an MQW cell <b>602</b>, and 1.516 Volts for a DH cell <b>604</b> of the present invention, along with the error bars, show that there is no degradation in open circuit voltage for the DH approach.</p>
+      <p id="p-0048" num="0047">
+         <figref idref="DRAWINGS">FIG. 7</figref> shows the spectral response current for a standard cell <b>700</b>, for an MQW cell <b>702</b>, and a DH cell <b>704</b>. The MQW cell <b>704</b> has an increase of 0.46 mA average over the standard cell <b>700</b>, and the DH cell <b>704</b> has a 0.42 mA average gain over the standard cell <b>700</b>.
+      </p>
+      <p id="h-0012" num="0000">Flowchart</p>
+      <p id="p-0049" num="0048">
+         <figref idref="DRAWINGS">FIG. 8</figref> is a flowchart illustrating the steps of the present invention.</p>
+      <p id="p-0050" num="0049">Box <b>800</b> illustrates growing a base material for a solar cell.</p>
+      <p id="p-0051" num="0050">Box <b>802</b> illustrates growing at least one dual heterojunction on the base material.</p>
+      <p id="p-0052" num="0051">Box <b>804</b> illustrates growing an emitter on the at least one dual heterojunction.</p>
+      <heading id="h-0013" level="1">CONCLUSION</heading>
+      <p id="p-0053" num="0052">In summary, embodiments of the invention provide methods and apparatuses for a dual heterojunction multijunction solar cell. A method in accordance with the present invention comprises growing a base material for a solar cell, growing at least one dual heterojunction on the base material, and growing an emitter on the at least one dual heterojunction.</p>
+      <p id="p-0054" num="0053">Such a method further optionally includes the base, emitter, and at least one dual heterojunction being in a top cell of a triple junction solar cell, the at least one dual heterojunction being at least 200 angstroms in thickness, the at least one dual heterojunction being a stack of alternating low bandgap materials and barrier materials, the at least one dual heterojunction being contained within a depletion region created by the base material and the emitter, and a material for the low bandgap material being one or any alloy combination (continuous or digital) of: GaAs, GaInAs, GaInAsN, GaInAsNSb, GaInP, GaPN, GaInPN, InPN, InN, InNAs, GaInPAsN, InP, AlGaInP, GaAsP, AlGaAs, GaInAsP, GaSb, InSb, InAs, Ge, SiGe, SiGeC, SiGeSn, ZnGeAs, ZnGeSiAs, CuAlGaInS, CuAlGaInSe, as long as the alloy is of lower band gap than the host surrounding barrier layers and/or base/emitter material(s).</p>
+      <p id="p-0055" num="0054">An apparatus in accordance with the present invention comprises a substrate, and a first subcell, coupled to the substrate, wherein the first subcell comprises a base region, coupled to the substrate, an emitter region, and at least one dual heterojunction, coupled between the base region and the emitter region, wherein the at least one dual heterojunction has a lower bandgap than the emitter region.</p>
+      <p id="p-0056" num="0055">Such an apparatus further optionally includes a second subcell, coupled between the substrate and the first subcell, the at least one dual heterojunction being at least 200 angstroms in thickness, the at least one dual heterojunction being a stack of alternating low bandgap material and barrier materials, the at least one dual heterojunction being contained within a depletion region created by the emitter region and the base region, and a material for the dual heterojunction being gallium arsenide.</p>
+      <p id="p-0057" num="0056">An alternate embodiment of the present invention comprises a dual heterojunction region of at least 200 angstroms thickness, the dual heterojunction region being contained within a depletion region of the solar cell, such that the dual heterojunction region generates additional current in the solar cell by absorbing incident light within the dual heterojunction region.</p>
+      <p id="p-0058" num="0057">Such an embodiment optionally further includes the dual heterojunction region being in a top subcell of a multijunction solar cell.</p>
+      <p id="p-0059" num="0058">The foregoing description of the preferred embodiment of the invention has been presented for the purposes of illustration and description. It is not intended to be exhaustive or to limit the invention to the precise form disclosed. Many modifications and variations are possible in light of the above teaching. It is intended that the scope of the invention be limited not by this detailed description, but rather by the claims appended hereto and the equivalents thereof.</p>
+      <?DETDESC description="Detailed Description" end="tail"?>
+   </description>
+   <us-claim-statement>What is claimed is:</us-claim-statement>
+   <claims id="claims">
+      <claim id="CLM-00001" num="00001">
+         <claim-text>1. A device, comprising:
+            <claim-text>at least one structure comprised of a well layer contained within a region of barrier layers, wherein the well layer is comprised of a first composition comprising an alloy of GaInAs, the barrier layers are comprised of a second composition comprising an alloy of GaAs or GaInAs, and the well layer has a lower band gap than the barrier layers;</claim-text>
+            <claim-text>the structure is coupled between an emitter and base, wherein the emitter and base are comprised of a third composition comprising an alloy of GaInAs, and the structure has a lower bandgap than the emitter and base;</claim-text>
+            <claim-text>the structure is sufficiently thick that quantum confinement of a generated electron does not occur;</claim-text>
+            <claim-text>the structure functions to absorb light below a bandgap of the emitter and base, and to produce a current by generating electron-hole pairs as carriers that are emitted and collected at the emitter and base; and</claim-text>
+            <claim-text>the structure, emitter and base comprise a subcell of a multijunction solar cell, and the structure is configured to produce a current balanced to other subcells in the multijunction solar cell connected in series to the subcell.</claim-text>
+         </claim-text>
+      </claim>
+      <claim id="CLM-00002" num="00002">
+         <claim-text>2. The device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the structure has a thickness of at least 200 Angstroms.</claim-text>
+      </claim>
+      <claim id="CLM-00003" num="00003">
+         <claim-text>3. The device of <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the structure is sufficiently shallow so that the carriers escape.</claim-text>
+      </claim>
+      <claim id="CLM-00004" num="00004">
+         <claim-text>4. A device, comprising:
+            <claim-text>at least one structure comprised of a well layer contained within a region of barrier layers, wherein the well layer is comprised of a first composition comprising an alloy of GaInAs, the barrier layers are comprised of a second composition comprising an alloy of AlGaAs, GaInAs, or AlGaAs and GaInAs, and the well layer has a lower band gap than the barrier layers;</claim-text>
+            <claim-text>the structure is coupled between an emitter and base, wherein the emitter and base are comprised of a third composition comprising an alloy of GaInAs, and the structure has a lower bandgap than the emitter and base;</claim-text>
+            <claim-text>the structure is sufficiently thick that quantum confinement of a generated electron does not occur;</claim-text>
+            <claim-text>the structure functions to absorb light below a bandgap of the emitter and base, and to produce a current by generating electron-hole pairs as carriers that are emitted and collected at the emitter and base; and</claim-text>
+            <claim-text>the structure, emitter and base comprise a subcell of a multijunction solar cell, and the structure is configured to produce a current balanced to other subcells in the multijunction solar cell connected in series to the subcell.</claim-text>
+         </claim-text>
+      </claim>
+      <claim id="CLM-00005" num="00005">
+         <claim-text>5. The device of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the structure has a thickness of at least 200 Angstroms.</claim-text>
+      </claim>
+      <claim id="CLM-00006" num="00006">
+         <claim-text>6. The device of <claim-ref idref="CLM-00004">claim 4</claim-ref>, wherein the structure is sufficiently shallow so that the carriers escape.</claim-text>
+      </claim>
+      <claim id="CLM-00007" num="00007">
+         <claim-text>7. A device, comprising:
+            <claim-text>at least one structure comprised of a well layer contained within a region of barrier layers, wherein the well layer is comprised of a first composition comprising an alloy of AlGaAs, InGaAs, or AlGaAs and InGaAs, the barrier layers are comprised of a second composition comprising an alloy of AlGaAs, InGaAs, or AlGaAs and InGaAs, and the well layer has a lower band gap than the barrier layers;</claim-text>
+            <claim-text>the structure is coupled between an emitter and base, wherein the emitter and base are comprised of a third composition comprising an alloy of AlGaAs, InGaAs, or AlGaAs and InGaAs, and the structure has a lower bandgap than the emitter and base;</claim-text>
+            <claim-text>the structure is sufficiently thick that quantum confinement of a generated electron does not occur;</claim-text>
+            <claim-text>the structure functions to absorb light below a bandgap of the emitter and base, and to produce a current by generating electron-hole pairs as carriers that are emitted and collected at the emitter and base; and</claim-text>
+            <claim-text>the structure, emitter and base comprise a subcell of a multijunction solar cell, and the structure is configured to produce a current balanced to other subcells in the multijunction solar cell connected in series to the subcell.</claim-text>
+         </claim-text>
+      </claim>
+      <claim id="CLM-00008" num="00008">
+         <claim-text>8. The device of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein the structure has a thickness of at least 200 Angstroms.</claim-text>
+      </claim>
+      <claim id="CLM-00009" num="00009">
+         <claim-text>9. The device of <claim-ref idref="CLM-00007">claim 7</claim-ref>, wherein the structure is sufficiently shallow so that the carriers escape.</claim-text>
+      </claim>
+   </claims>
+</us-patent-grant>

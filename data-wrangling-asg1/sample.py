@@ -10,10 +10,24 @@ class Patent:
    __invention_title_tag_p = re.compile('<invention-title\sid=".*">.*<\/invention-title>')
    __only_invention_title_tag_p = re.compile('(<invention-title\sid=".*">|<\/invention-title>)')
 
-   __abstract_tag_p = re.compile('<abstract id="abstract">[\s\S]*<\/abstract>')
-   __non_abstract_text = re.compile('(<abstract id="abstract">|<\/abstract>|<p.*">|<\/p>)')
-   __remove_tags_p = re.compile('(<[\s\w=\-"]*>|<\/[-\w]+>)')
-   __num_claims_p = re.compile('<number-of-claims>\d*<\/number-of-claims>')
+   __abstract_tag_p = re.compile(r'<abstract id="abstract">[\s\S]*<\/abstract>')
+   __non_abstract_text = re.compile(r'(<abstract id="abstract">|<\/abstract>|<p.*">|<\/p>)')
+   __remove_tags_p = re.compile(r'(<[\s\w=\-"]*>|<\/[-\w]+>)')
+   __num_claims_p = re.compile(r'<number-of-claims>\d*<\/number-of-claims>')
+   __cited_by_examiner_p = re.compile(r"<category>cited by examiner<\/category>")
+
+   publish_and_application_reference_p = re.compile("(<(publication|application)-reference.*>[\s\S]*<\/(publication|application)-reference>)")
+   app_type_tag = re.compile('<application-reference appl-type="\w+">')
+   app_type_only = re.compile(r'"\w+"')
+   kind_tag = re.compile("<kind>\w+<\/kind>")
+
+   __patent_templ = "{0} Patent Grant ({1} published application) issued on or after January 2, 2001{2}"
+   gen_kind = {
+      "design": (lambda kindcode: "Design Patent"),
+      "plant": (lambda kindcode: Patent.__patent_templ.format("Plant", "with a", "") if kindcode == "P3" else Patent.__patent_templ.format("Plant", "no", "")),
+      "utility": (lambda kindcode: Patent.__patent_templ.format("Utility", "with a", ".") if kindcode == "B2" else Patent.__patent_templ.format("Utility", "no", ".")),
+      "reissue": (lambda kindcode: "Reissue Patent")
+   }
 
    __codes = [{"find": re.compile("&#x2018;"), "replace":"\u2018"},
    {"find": re.compile("&#x2019;"), "replace":"\u2019"}]
@@ -49,7 +63,6 @@ class Patent:
       title = re.sub(Patent.__only_invention_title_tag_p, "", invention_title_tag[0])
       return self.cleanup(title)
 
-
    def extract_abstract(self):
       enable_log = True
       abstract_tag = re.findall(Patent.__abstract_tag_p, self.raw)
@@ -62,7 +75,25 @@ class Patent:
          return self.cleanup(abstract)
 
    def extract_kind(self):
-      return "None"
+      enable_log = True
+      p_a_tags = re.findall(Patent.publish_and_application_reference_p, self.raw)
+      debug(p_a_tags, Patent.publish_and_application_reference_p, enable_log)
+
+      app_tag = re.findall(Patent.app_type_tag, p_a_tags[0][0])      
+      debug(app_tag, Patent.app_type_tag, enable_log)
+      
+      app_type = re.findall(Patent.app_type_only, app_tag[0])
+      debug(app_type, Patent.app_type_only, enable_log)
+
+      kind_patent = app_type[0].strip('"')
+
+      kind_tag = re.findall(Patent.kind_tag, p_a_tags[0][0])
+      kind_code = re.sub(Patent.__remove_tags_p, "", kind_tag[0]).strip()
+
+      if kind_patent in Patent.gen_kind:
+         return Patent.gen_kind[kind_patent](kind_code)
+      else:
+         return "%s Patent"%(kind_patent[0].upper() + kind_patent[1:])
 
    def extract_number_of_claims(self):
       num_claims_tag = re.findall(Patent.__num_claims_p, self.raw)
@@ -75,8 +106,9 @@ class Patent:
    def extract_citations_app_count(self):
       return "None"
 
-   def extract_citations_examiner_count(self):
-      return "None"
+   def extract_citations_examiner_count(self):      
+      examiner_citations = re.findall(Patent.__cited_by_examiner_p, self.raw)
+      return len(examiner_citations)
 
    def extract_claims_text(self):
       return "None"
@@ -176,4 +208,6 @@ if __name__ == "__main__":
    test_field(patents, sample_output, 'patent_title')
    test_field(patents, sample_output, 'abstract')
    test_field(patents, sample_output, 'number_of_claims')
+   test_field(patents, sample_output, 'citations_examiner_count')
+   test_field(patents, sample_output, 'kind')
 

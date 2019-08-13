@@ -1,0 +1,837 @@
+<us-patent-grant lang="EN" dtd-version="v4.5 2014-04-03" file="USPP030733-20190723.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20190709" date-publ="20190723">
+   <us-bibliographic-data-grant>
+      <publication-reference>
+         <document-id>
+            <country>US</country>
+            <doc-number>PP030733</doc-number>
+            <kind>P2</kind>
+            <date>20190723</date>
+         </document-id>
+      </publication-reference>
+      <application-reference appl-type="plant">
+         <document-id>
+            <country>US</country>
+            <doc-number>15932178</doc-number>
+            <date>20180215</date>
+         </document-id>
+      </application-reference>
+      <us-application-series-code>15</us-application-series-code>
+      <classifications-ipcr>
+         <classification-ipcr>
+            <ipc-version-indicator>
+               <date>20180101</date>
+            </ipc-version-indicator>
+            <classification-level>A</classification-level>
+            <section>A</section>
+            <class>01</class>
+            <subclass>H</subclass>
+            <main-group>5</main-group>
+            <subgroup>08</subgroup>
+            <symbol-position>F</symbol-position>
+            <classification-value>I</classification-value>
+            <action-date>
+               <date>20190723</date>
+            </action-date>
+            <generating-office>
+               <country>US</country>
+            </generating-office>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+         </classification-ipcr>
+      </classifications-ipcr>
+      <classifications-cpc>
+         <main-cpc>
+            <classification-cpc>
+               <cpc-version-indicator>
+                  <date>20130101</date>
+               </cpc-version-indicator>
+               <section>A</section>
+               <class>01</class>
+               <subclass>H</subclass>
+               <main-group>5</main-group>
+               <subgroup>08</subgroup>
+               <symbol-position>F</symbol-position>
+               <classification-value>I</classification-value>
+               <action-date>
+                  <date>20190723</date>
+               </action-date>
+               <generating-office>
+                  <country>US</country>
+               </generating-office>
+               <classification-status>B</classification-status>
+               <classification-data-source>H</classification-data-source>
+               <scheme-origination-code>C</scheme-origination-code>
+            </classification-cpc>
+         </main-cpc>
+      </classifications-cpc>
+      <classification-national>
+         <country>US</country>
+         <main-classification>PLT204</main-classification>
+      </classification-national>
+      <invention-title id="d2e43">Raspberry plant variety named &#x2018;DrisRaspEleven&#x2019;</invention-title>
+      <us-botanic>
+         <latin-name>Rubus idaeus L.</latin-name>
+         <variety>DrisRaspEleven</variety>
+      </us-botanic>
+      <us-references-cited>
+         <us-citation>
+            <patcit num="00001">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP4486</doc-number>
+                  <kind>P</kind>
+                  <name>Reiter</name>
+                  <date>19791100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00002">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP6493</doc-number>
+                  <kind>P</kind>
+                  <name>Wilhelm</name>
+                  <date>19881200</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00003">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP7436</doc-number>
+                  <kind>P</kind>
+                  <name>Ackerman</name>
+                  <date>19910200</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00004">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP7437</doc-number>
+                  <kind>P</kind>
+                  <name>Ackerman</name>
+                  <date>19910200</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00005">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP7528</doc-number>
+                  <kind>P</kind>
+                  <name>Ackerman</name>
+                  <date>19910500</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00006">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP8022</doc-number>
+                  <kind>P</kind>
+                  <name>Wilhelm</name>
+                  <date>19921100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00007">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP8027</doc-number>
+                  <kind>P</kind>
+                  <name>Wilhelm</name>
+                  <date>19921100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00008">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP9340</doc-number>
+                  <kind>P</kind>
+                  <name>Wilhelm et al.</name>
+                  <date>19951000</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00009">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP9653</doc-number>
+                  <kind>P</kind>
+                  <name>Wilhelm et al.</name>
+                  <date>19961000</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00010">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP9696</doc-number>
+                  <kind>P</kind>
+                  <name>Fear</name>
+                  <date>19961100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00011">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP11067</doc-number>
+                  <kind>P</kind>
+                  <name>Fear et al.</name>
+                  <date>19990900</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00012">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP11087</doc-number>
+                  <kind>P</kind>
+                  <name>Fear et al.</name>
+                  <date>19991000</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00013">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP11094</doc-number>
+                  <kind>P</kind>
+                  <name>Fear et al.</name>
+                  <date>19991000</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00014">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP11102</doc-number>
+                  <kind>P</kind>
+                  <name>Fear et al.</name>
+                  <date>19991000</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00015">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP14761</doc-number>
+                  <kind>P2</kind>
+                  <name>Fear et al.</name>
+                  <date>20040500</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00016">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP14781</doc-number>
+                  <kind>P2</kind>
+                  <name>Fear et al.</name>
+                  <date>20040500</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00017">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP14804</doc-number>
+                  <kind>P2</kind>
+                  <name>Fear et al.</name>
+                  <date>20040500</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00018">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP14860</doc-number>
+                  <kind>P2</kind>
+                  <name>Fear et al.</name>
+                  <date>20040600</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00019">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP14903</doc-number>
+                  <kind>P2</kind>
+                  <name>Fear et al.</name>
+                  <date>20040600</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00020">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP14904</doc-number>
+                  <kind>P2</kind>
+                  <name>Fear et al.</name>
+                  <date>20040600</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00021">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP18658</doc-number>
+                  <kind>P3</kind>
+                  <name>Fear et al.</name>
+                  <date>20080300</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00022">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP18659</doc-number>
+                  <kind>P3</kind>
+                  <name>Fear et al.</name>
+                  <date>20080300</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00023">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP19137</doc-number>
+                  <kind>P3</kind>
+                  <name>Harrison et al.</name>
+                  <date>20080800</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00024">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP19656</doc-number>
+                  <kind>P2</kind>
+                  <name>Hamilton et al.</name>
+                  <date>20090100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00025">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP22246</doc-number>
+                  <kind>P3</kind>
+                  <name>Hamilton et al.</name>
+                  <date>20111100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00026">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP22731</doc-number>
+                  <kind>P2</kind>
+                  <name>Fear et al.</name>
+                  <date>20120500</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00027">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP23477</doc-number>
+                  <kind>P3</kind>
+                  <name>Hamilton et al.</name>
+                  <date>20130300</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00028">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP24610</doc-number>
+                  <kind>P3</kind>
+                  <name>Hamilton et al.</name>
+                  <date>20140700</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00029">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP25044</doc-number>
+                  <kind>P3</kind>
+                  <name>Hamilton et al.</name>
+                  <date>20141100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00030">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP25045</doc-number>
+                  <kind>P3</kind>
+                  <name>Hamilton et al.</name>
+                  <date>20141100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00031">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP27644</doc-number>
+                  <kind>P3</kind>
+                  <name>Hamilton et al.</name>
+                  <date>20170200</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00032">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP28775</doc-number>
+                  <kind>P2</kind>
+                  <name>Hamilton et al.</name>
+                  <date>20171200</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <patcit num="00033">
+               <document-id>
+                  <country>US</country>
+                  <doc-number>PP28856</doc-number>
+                  <kind>P3</kind>
+                  <name>Vitten et al.</name>
+                  <date>20180100</date>
+               </document-id>
+            </patcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00034">
+               <othercit>Cousineau et al., &#x201c;Use of Isoenzyme Analysis to Characterize Raspberry Cultivars and Detect Cultivar Mislabeling&#x201d;, HortScience vol. 27, No. 9, Sep. 1992, pp. 1023-1025.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00035">
+               <othercit>Williams et al., &#x201c;DNA Polymorphisms Amplified by Arbitrary Primers are Useful as Genetic Markers&#x201d;, Nucleic Acids Research, vol. 18, No. 22, 1990, pp. 6531-6535.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00036">
+               <othercit>Unpublished U.S. Appl. No. 15/732,501, filed Nov. 20, 2017, titled &#x201c;Raspberry Plant Variety Named DrisRaspTwelve&#x201d;.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+         <us-citation>
+            <nplcit num="00037">
+               <othercit>Unpublished U.S. Appl. No. 15/731,419, filed Jun. 6, 2017, titled &#x201c;Raspberry Plant Variety Named DrisRaspThirteen&#x201d;.</othercit>
+            </nplcit>
+            <category>cited by applicant</category>
+         </us-citation>
+      </us-references-cited>
+      <number-of-claims>1</number-of-claims>
+      <us-exemplary-claim>1</us-exemplary-claim>
+      <us-field-of-classification-search>
+         <classification-national>
+            <country>US</country>
+            <main-classification>PLT204</main-classification>
+         </classification-national>
+         <classification-cpc-text>A01H 5/0887</classification-cpc-text>
+      </us-field-of-classification-search>
+      <figures>
+         <number-of-drawing-sheets>4</number-of-drawing-sheets>
+         <number-of-figures>5</number-of-figures>
+      </figures>
+      <us-parties>
+         <us-applicants>
+            <us-applicant sequence="001" app-type="applicant" designation="us-only">
+               <addressbook>
+                  <orgname>Driscoll's, Inc.</orgname>
+                  <address>
+                     <city>Watsonville</city>
+                     <state>CA</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+               <residence>
+                  <country>US</country>
+               </residence>
+            </us-applicant>
+         </us-applicants>
+         <inventors>
+            <inventor sequence="001" designation="us-only">
+               <addressbook>
+                  <last-name>Hamilton</last-name>
+                  <first-name>Brian K.</first-name>
+                  <address>
+                     <city>Richmond</city>
+                     <state>TX</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+            </inventor>
+            <inventor sequence="002" designation="us-only">
+               <addressbook>
+                  <last-name>Sjulin</last-name>
+                  <first-name>Thomas M.</first-name>
+                  <address>
+                     <city>Aromas</city>
+                     <state>CA</state>
+                     <country>US</country>
+                  </address>
+               </addressbook>
+            </inventor>
+         </inventors>
+         <agents>
+            <agent sequence="01" rep-type="attorney">
+               <addressbook>
+                  <orgname>Morrison &#x26; Foerster LLP</orgname>
+                  <address>
+                     <country>unknown</country>
+                  </address>
+               </addressbook>
+            </agent>
+         </agents>
+      </us-parties>
+      <assignees>
+         <assignee>
+            <addressbook>
+               <orgname>Driscoll's, Inc.</orgname>
+               <role>02</role>
+               <address>
+                  <city>Watsonville</city>
+                  <state>CA</state>
+                  <country>US</country>
+               </address>
+            </addressbook>
+         </assignee>
+      </assignees>
+      <examiners>
+         <primary-examiner>
+            <last-name>Bell</last-name>
+            <first-name>Kent L</first-name>
+            <department>1661</department>
+         </primary-examiner>
+      </examiners>
+   </us-bibliographic-data-grant>
+   <abstract id="abstract">
+      <p id="p-0001" num="0000">A new and distinct variety of raspberry plant named &#x2018;DrisRaspEleven&#x2019;, particularly characterized by its large fruit, red fruit color, and its ability to withstand mechanical harvesting, is disclosed.</p>
+   </abstract>
+   <drawings id="DRAWINGS">
+      <figure id="Fig-EMI-D00001" num="00001">
+         <img id="EMI-D00001" he="194.06mm" wi="164.00mm" orientation="landscape" file="USPP030733-20190723-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00002" num="00002">
+         <img id="EMI-D00002" he="201.00mm" wi="166.12mm" orientation="landscape" file="USPP030733-20190723-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00003" num="00003">
+         <img id="EMI-D00003" he="199.90mm" wi="166.79mm" orientation="landscape" file="USPP030733-20190723-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+      <figure id="Fig-EMI-D00004" num="00004">
+         <img id="EMI-D00004" he="200.91mm" wi="165.78mm" orientation="landscape" file="USPP030733-20190723-D00004.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+      </figure>
+   </drawings>
+   <description id="description">
+      <?BRFSUM description="Brief Summary" end="lead"?>
+      <p id="p-0002" num="0001">Latin name:</p>
+      <p id="p-0003" num="0002">Botanical classification: <i>Rubus idaeus </i>L.</p>
+      <p id="p-0004" num="0003">Varietal denomination: The varietal denomination of the claimed variety of raspberry plant is &#x2018;DrisRaspEleven&#x2019;.</p>
+      <heading id="h-0001" level="1">BACKGROUND OF THE INVENTION</heading>
+      <p id="p-0005" num="0004">Raspberries are the edible fruit of a multitude of plant species in the genus <i>Rubus </i>of the rose family. Most raspberry species are in the subgenus Idaeobatus. Raspberry plants are perennial plants with woody stems. Many of the most important modern commercial red raspberry cultivars derive from hybrids between <i>R. idaeus </i>and <i>R. strigosus</i>. Recent breeding has resulted in cultivars that are thornless and more strongly upright, not needing staking.</p>
+      <p id="p-0006" num="0005">Both the red and the black raspberry species have albino-like pale-yellow natural or horticultural variants. Fruits from such plants are called golden raspberries or yellow raspberries. Most pale-fruited raspberries commercially sold in the eastern United States are derivatives of red raspberries. Yellow-fruited variants of the black raspberry are sometimes grown in home gardens. Despite their dissimilar appearance, golden raspberries retain the distinctive flavor of their respective red or black species.</p>
+      <p id="p-0007" num="0006">An individual raspberry fruit is made up of around 100 drupelets, each of which contains a juicy pulp and a single central seed. A raspberry bush can yield several hundred berries a year. Unlike blackberries and dewberries, a raspberry has a hollow core once it is removed from the receptacle.</p>
+      <p id="p-0008" num="0007">Raspberries are traditionally planted in the winter as dormant canes, but planting plugs produced by tissue culture is also common. Additionally, the long cane production method consists of growing canes for one year in cold climates where the bud break is early, and then transplanting the canes to warm climates where they quickly flower and can produce an early season crop. A very vigorous crop, raspberries spread well and can be considered invasive, using extended underground shoots (also known as suckers or basal shoots) that can develop roots and individual plants.</p>
+      <p id="p-0009" num="0008">Raspberries are a popular fruit that are recognized for their antioxidants, high fiber, and as a good source of vitamin C. Raspberry fruit is typically consumed as fresh fruit, individually quick frozen (IQF) fruit, or in prepared foods, such as pur&#xe9;es, juices, jellies, jams, grocery items, baked goods, and snack foods.</p>
+      <p id="p-0010" num="0009">Raspberry is an important and valuable commercial fruit crop, widely grown in all temperate regions of the world. Accordingly, there is a need for new varieties of raspberry plant. In particular, there is a need for improved varieties of raspberry plant that are stable, high yielding, and agronomically sound.</p>
+      <heading id="h-0002" level="1">SUMMARY OF THE INVENTION</heading>
+      <p id="p-0011" num="0010">In order to meet these needs, the present invention is directed to an improved variety of raspberry plant. In particular, the invention relates to a new and distinct variety of raspberry plant (<i>Rubus idaeus </i>L), which has been denominated as &#x2018;DrisRaspEleven&#x2019;.</p>
+      <p id="p-0012" num="0011">Raspberry plant variety &#x2018;DrisRaspEleven&#x2019; was discovered in Whatcom County, Wash. in August of 2009 and originated from a cross between the proprietary female parent raspberry plant &#x2018;V:312.1&#x2019; (unpatented) and the proprietary male parent raspberry plant &#x2018;RB721.1&#x2019; (unpatented). The original seedling of the new variety was first asexually propagated via cuttings in 2009.</p>
+      <p id="p-0013" num="0012">&#x2018;DrisRaspEleven&#x2019; was subsequently asexually propagated via root cuttings, and underwent further testing at a farm in Whatcom County, Wash. for seven years (2009 to 2015). The present invention has been found to be stable and reproduce true to type through successive asexual propagations via root cuttings.</p>
+      <p id="p-0014" num="0013">&#x2018;DrisRaspEleven&#x2019; exhibits the following distinguishing characteristics when grown under normal horticultural practices in Whatcom County, Wash.:
+         <ul id="ul0001" list-style="none">
+            <li id="ul0001-0001" num="0000">
+               <ul id="ul0002" list-style="none">
+                  <li id="ul0002-0001" num="0014">1. Large fruit size;</li>
+                  <li id="ul0002-0002" num="0015">2. Bright red color fruit;</li>
+                  <li id="ul0002-0003" num="0016">3. Good flavor; and</li>
+                  <li id="ul0002-0004" num="0017">4. Better shelf life.</li>
+               </ul>
+            </li>
+         </ul>
+      </p>
+      <p id="p-0015" num="0018">&#x2018;DrisRaspEleven&#x2019; was selected for its large fruit, red fruit color, and its ability to withstand mechanical harvesting.</p>
+      <?BRFSUM description="Brief Summary" end="tail"?>
+      <?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+      <description-of-drawings>
+         <heading id="h-0003" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+         <p id="p-0016" num="0019">This new raspberry plant is illustrated by the accompanying photographs, which show fruit of the plant, as well as a cane, flowers, and leaves. The colors shown are as true as can be reasonably obtained by conventional photographic procedures. The photographs are of plants that are two years old.</p>
+         <p id="p-0017" num="0020">
+            <figref idref="DRAWINGS">FIGS. 1A and 1B</figref> illustrate both the lower surface (<figref idref="DRAWINGS">FIG. 1A</figref>) and the upper surface (<figref idref="DRAWINGS">FIG. 1B</figref>) of plant leaves of variety &#x2018;DrisRaspEleven&#x2019;.</p>
+         <p id="p-0018" num="0021">
+            <figref idref="DRAWINGS">FIG. 2</figref> illustrates typical flowers of variety &#x2018;DrisRaspEleven&#x2019; at various stages of development.</p>
+         <p id="p-0019" num="0022">
+            <figref idref="DRAWINGS">FIG. 3</figref> illustrates typical fruit of variety &#x2018;DrisRaspEleven&#x2019; at various stages of development.</p>
+         <p id="p-0020" num="0023">
+            <figref idref="DRAWINGS">FIG. 4</figref> illustrates a section of a cane of variety &#x2018;DrisRaspEleven&#x2019;.</p>
+      </description-of-drawings>
+      <?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+      <?DETDESC description="Detailed Description" end="lead"?>
+      <heading id="h-0004" level="1">DETAILED BOTANICAL DESCRIPTION</heading>
+      <p id="p-0021" num="0024">The following descriptions set forth the distinctive characteristics of &#x2018;DrisRaspEleven&#x2019;. The data that define these characteristics are based on observations taken in Whatcom County, Wash. from 2009 to 2015. This description is in accordance with UPOV terminology. Color designations, color descriptions, and other phenotypical descriptions may deviate from the stated values and descriptions depending upon variation in environmental, seasonal, climatic and cultural conditions. &#x2018;DrisRaspEleven&#x2019; has not been observed under all possible environmental conditions. The botanical description of &#x2018;DrisRaspEleven&#x2019; was taken from two-year-old plants. The indicated values represent averages calculated from measurements of several plants. Color references are primarily to The R.H.S. Colour Chart of The Royal Horticultural Society of London (R.H.S.) (2015 edition). Descriptive terminology follows the <i>Plant Identification Terminology, An Illustrated Glossary, </i>2<sup>nd </sup>edition by James G. Harris and Melinda Woolf Harris, unless where otherwise defined.
+         <ul id="ul0003" list-style="none">
+            <li id="ul0003-0001" num="0025">Classification:
+               <ul id="ul0004" list-style="none">
+                  <li id="ul0004-0001" num="0000">
+                     <ul id="ul0005" list-style="none">
+                        <li id="ul0005-0001" num="0026">
+                           <i>Family</i>.&#x2014;Rosaceae.</li>
+                        <li id="ul0005-0002" num="0027">
+                           <i>Botanical.&#x2014;Rubus idaeus </i>L.</li>
+                        <li id="ul0005-0003" num="0028">
+                           <i>Common name</i>.&#x2014;Raspberry.</li>
+                        <li id="ul0005-0004" num="0029">
+                           <i>Variety name</i>.&#x2014;&#x2018;DrisRaspEleven&#x2019;.</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0002" num="0030">Parentage:
+               <ul id="ul0006" list-style="none">
+                  <li id="ul0006-0001" num="0000">
+                     <ul id="ul0007" list-style="none">
+                        <li id="ul0007-0001" num="0031">
+                           <i>Female parent</i>.&#x2014;&#x2018;V312.1&#x2019; (unpatented).</li>
+                        <li id="ul0007-0002" num="0032">
+                           <i>Male parent</i>.&#x2014;&#x2018;RB721.1&#x2019; (unpatented).</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0003" num="0033">Plant:
+               <ul id="ul0008" list-style="none">
+                  <li id="ul0008-0001" num="0000">
+                     <ul id="ul0009" list-style="none">
+                        <li id="ul0009-0001" num="0034">
+                           <i>Propagation</i>.&#x2014;Root cuttings.</li>
+                        <li id="ul0009-0002" num="0035">
+                           <i>Height.&#x2014;</i>216.50 cm.</li>
+                        <li id="ul0009-0003" num="0036">
+                           <i>Width.&#x2014;</i>184.20 cm.</li>
+                        <li id="ul0009-0004" num="0037">
+                           <i>Length/width ratio.&#x2014;</i>1.2.</li>
+                        <li id="ul0009-0005" num="0038">
+                           <i>Self</i>-                           <i>fruitfulness</i>.&#x2014;Self-fruitful.</li>
+                        <li id="ul0009-0006" num="0039">
+                           <i>New cane growth habit</i>.&#x2014;Semi-erect or semi-upright.</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0004" num="0040">Primocanes:
+               <ul id="ul0010" list-style="none">
+                  <li id="ul0010-0001" num="0000">
+                     <ul id="ul0011" list-style="none">
+                        <li id="ul0011-0001" num="0041">
+                           <i>Cane length in autumn.&#x2014;</i>146.50 cm.</li>
+                        <li id="ul0011-0002" num="0042">
+                           <i>Internodal distance at central </i>&#x2153; <i>of cane.&#x2014;</i>5.65 cm.</li>
+                        <li id="ul0011-0003" num="0043">
+                           <i>Anthocyanin coloration of apex during rapid growth of very young shoot</i>.&#x2014;Present.</li>
+                        <li id="ul0011-0004" num="0044">
+                           <i>Shape of cane cross section </i>(                           <i>from mid cane of primocane</i>).&#x2014;Rounded.</li>
+                        <li id="ul0011-0005" num="0045">
+                           <i>Pubescence on canes</i>.&#x2014;Absent.</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0005" num="0046">Floricanes:
+               <ul id="ul0012" list-style="none">
+                  <li id="ul0012-0001" num="0000">
+                     <ul id="ul0013" list-style="none">
+                        <li id="ul0013-0001" num="0047">
+                           <i>Dormant cane color in summer</i>.&#x2014;RHS 60B (Strong purplish red).</li>
+                        <li id="ul0013-0002" num="0048">
+                           <i>Fruiting lateral attitude in summer</i>.&#x2014;Semi-erect.</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0006" num="0049">Prickles (spines):
+               <ul id="ul0014" list-style="none">
+                  <li id="ul0014-0001" num="0000">
+                     <ul id="ul0015" list-style="none">
+                        <li id="ul0015-0001" num="0050">
+                           <i>Length at </i>1.0 <i>m height at end of harvest season </i>(                           <i>from base to tip</i>).&#x2014;1.50 mm.</li>
+                        <li id="ul0015-0002" num="0051">
+                           <i>Color </i>(                           <i>pigmentation</i>).&#x2014;RHS 138B (Moderate yellow-green).</li>
+                        <li id="ul0015-0003" num="0052">
+                           <i>Attitude of tip</i>.&#x2014;Upward.</li>
+                        <li id="ul0015-0004" num="0053">
+                           <i>Presence and distribution on petioles</i>.&#x2014;Absent.</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0007" num="0054">Leaves:
+               <ul id="ul0016" list-style="none">
+                  <li id="ul0016-0001" num="0000">
+                     <ul id="ul0017" list-style="none">
+                        <li id="ul0017-0001" num="0055">
+                           <i>Terminal leaflet</i>.&#x2014;Length: 112.8 mm. Width: 74.9 mm. Length/width ratio: 1.5. Leaf color: Green color of upper surface: RHS 137A (Moderate olive-green). Green color of lower surface: RHS 138B (Moderate yellow-green). Profile in cross section: Concave. Overlapping or relative position of lateral leaflets: Free (In some terminal leaflets one side of the basal pair leaflet is attached to terminal leaflet). Shape: Ovate. Apex: Truncate. Base: Obtuse. Margin: Doubly serrate.</li>
+                        <li id="ul0017-0002" num="0056">
+                           <i>Lateral leaflets </i>(                           <i>basal pair</i>).&#x2014;Number of leaflets: Usually 3. Size: Length: 93.8 mm. Width: 59.3 mm. Length/width ratio: 1.6. Shape: Ovate. Base: Obtuse. Margin: Doubly serrate.</li>
+                        <li id="ul0017-0003" num="0057">
+                           <i>Rachis length between terminal leaflet and adjacent lateral leaflets.&#x2014;</i>30.91 mm.</li>
+                        <li id="ul0017-0004" num="0058">
+                           <i>Petiole</i>.&#x2014;Length: 4.12 mm. Diameter: 1.72 mm. Pigmentation of upper surface: RHS 138A (Moderate yellowish green). Pigmentation of underside: RHS 138B (Moderate yellow-green).</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0008" num="0059">Stipules:
+               <ul id="ul0018" list-style="none">
+                  <li id="ul0018-0001" num="0000">
+                     <ul id="ul0019" list-style="none">
+                        <li id="ul0019-0001" num="0060">
+                           <i>Orientation</i>.&#x2014;Erect.</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0009" num="0061">Flowers:
+               <ul id="ul0020" list-style="none">
+                  <li id="ul0020-0001" num="0000">
+                     <ul id="ul0021" list-style="none">
+                        <li id="ul0021-0001" num="0062">
+                           <i>Diameter.&#x2014;</i>22.45 mm.</li>
+                        <li id="ul0021-0002" num="0063">
+                           <i>Petal length.&#x2014;</i>6.39 mm.</li>
+                        <li id="ul0021-0003" num="0064">
+                           <i>Petal width.&#x2014;</i>3.45 mm.</li>
+                        <li id="ul0021-0004" num="0065">
+                           <i>Length/width ratio.&#x2014;</i>1.9.</li>
+                        <li id="ul0021-0005" num="0066">
+                           <i>Petal color</i>.&#x2014;RHS 139D (Moderate yellow-green).</li>
+                        <li id="ul0021-0006" num="0067">
+                           <i>Flowering period</i>.&#x2014;Floricane: Early July to late August.</li>
+                        <li id="ul0021-0007" num="0068">
+                           <i>Pedicel</i>.&#x2014;Anthocyanin coloration: Present. Length: 23.77 mm. Diameter: 1.03 mm.</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li id="ul0003-0010" num="0069">Fruit:
+               <ul id="ul0022" list-style="none">
+                  <li id="ul0022-0001" num="0000">
+                     <ul id="ul0023" list-style="none">
+                        <li id="ul0023-0001" num="0070">
+                           <i>Brix value.&#x2014;</i>9.1.</li>
+                        <li id="ul0023-0002" num="0071">
+                           <i>Length.&#x2014;</i>24.51 mm.</li>
+                        <li id="ul0023-0003" num="0072">
+                           <i>Diameter.&#x2014;</i>23.40 mm.</li>
+                        <li id="ul0023-0004" num="0073">
+                           <i>Ratio of length to width.&#x2014;</i>1.0.</li>
+                        <li id="ul0023-0005" num="0074">
+                           <i>Average number of drupelets per fruit.&#x2014;</i>85.</li>
+                        <li id="ul0023-0006" num="0075">
+                           <i>Weight </i>(                           <i>g/fruit</i>).&#x2014;Floricane: 9.1 g/fruit.</li>
+                        <li id="ul0023-0007" num="0076">
+                           <i>Weight of seeds.&#x2014;</i>0.003295 g/seed.</li>
+                        <li id="ul0023-0008" num="0077">
+                           <i>Shape</i>.&#x2014;Ovate (Broad conical).</li>
+                        <li id="ul0023-0009" num="0078">
+                           <i>Color</i>.&#x2014;Maturing fruit: RHS 41A (Vivid reddish orange). Mature fruit color: RHS 46A (Strong red).</li>
+                        <li id="ul0023-0010" num="0079">
+                           <i>Main bearing type</i>.&#x2014;Only on previous year's cane in summer.</li>
+                        <li id="ul0023-0011" num="0080">
+                           <i>Harvest season</i>.&#x2014;Time of ripening &#x2014; floricane: Early July to late August.</li>
+                        <li id="ul0023-0012" num="0081">
+                           <i>Yield.&#x2014;</i>20,000 kg/ha to 27,000 kg/ha of fruit per season from 25-month-old plants when grown in Whatcom County, Wash.</li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </p>
+      <heading id="h-0005" level="1">COMPARISONS TO PARENTAL AND COMMERCIAL RASPBERRY VARIETIES</heading>
+      <p id="p-0022" num="0082">&#x2018;DrisRaspEleven&#x2019; differs from the proprietary female parent &#x2018;V312.1&#x2019; (unpatented) in that &#x2018;DrisRaspEleven&#x2019; produces fruit that is larger, sweeter, and has a brighter red color than that produced by &#x2018;V312.1&#x2019;. Additionally, &#x2018;DrisRaspEleven&#x2019; produces plants that are higher yielding than &#x2018;V312.1&#x2019; plants.</p>
+      <p id="p-0023" num="0083">&#x2018;DrisRaspEleven&#x2019; differs from the proprietary male parent &#x2018;RB721.1&#x2019; (unpatented) in that &#x2018;DrisRaspEleven&#x2019; produces fruit with a sweeter flavor than that produced by &#x2018;RB721.1&#x2019;. Additionally, &#x2018;DrisRaspEleven&#x2019; produces plants that are higher yielding than &#x2018;RB721.1&#x2019; plants.</p>
+      <p id="p-0024" num="0084">When &#x2018;DrisRaspEleven&#x2019; is compared to the commercial variety &#x2018;Willamette&#x2019; (unpatented), &#x2018;DrisRaspEleven&#x2019; produces fruit with a sweeter processing flavor than fruit produced by &#x2018;Willamette&#x2019;.</p>
+      <p id="p-0025" num="0085">When &#x2018;DrisRaspEleven&#x2019; is compared to the commercial variety &#x2018;Meeker&#x2019; (unpatented), &#x2018;DrisRaspEleven&#x2019; produces fruit with a larger size than that of &#x2018;Meeker&#x2019;.</p>
+      <?DETDESC description="Detailed Description" end="tail"?>
+   </description>
+   <us-claim-statement>What is claimed is:</us-claim-statement>
+   <claims id="claims">
+      <claim id="CLM-00001" num="00001">
+         <claim-text>1. A new and distinct variety of raspberry plant designated &#x2018;DrisRaspEleven&#x2019; as shown and described herein.</claim-text>
+      </claim>
+   </claims>
+</us-patent-grant>
