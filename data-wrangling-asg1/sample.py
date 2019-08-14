@@ -42,6 +42,9 @@ class Patent:
    __codes = [{"find": re.compile("&#x2018;"), "replace":"\u2018"},
    {"find": re.compile("&#x2019;"), "replace":"\u2019"}]
 
+   ordered_attr_list = ["grant_id","patent_title","kind","number_of_claims","inventors","citations_app_count","citations_examiner_count","claims_text","abstract"]
+   ordered_val_list = [self.grant_id, self.patent_title, self.kind, self.number_of_claims, self.inventors, self.citations_app_count, self.citations_examiner_count, self.claims_text, self.abstract]
+
    def __init__(self, raw_xml):
       self.raw = raw_xml
       self.grant_id = self.__extract_grant_id()
@@ -53,12 +56,18 @@ class Patent:
       self.citations_examiner_count = self.extract_citations_examiner_count()
       self.claims_text = self.extract_claims_text()
       self.abstract = self.extract_abstract()
+
    
-   def ordered_attr_list():
-      return ["grant_id","patent_title","kind","number_of_claims","inventors","citations_app_count","citations_examiner_count","claims_text","abstract"]
-   
-   def value_list():
-      return [self.grant_id, self.patent_title, self.kind, self.number_of_claims, self.inventors, self.citations_app_count, self.citations_examiner_count, self.claims_text, self.abstract]
+   def toJsonString():
+      innerObj = {}
+      for attr in ordered_attr_list":
+         if attr != "grant_id":
+            innerObj[attr] = getattr(self,attr)
+      
+      jsonObj = {getattr(self, "grant_id"): innerObj}
+
+      return str(jsonObj)
+      
    
    def __extract_grant_id(self):
       enable_log = True   
