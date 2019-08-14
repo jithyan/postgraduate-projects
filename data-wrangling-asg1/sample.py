@@ -2,7 +2,17 @@ import pandas as pd
 import re
 import json
 
-class Patent:      
+class Patent:
+   inventors_tag_p = re.compile('<inventors>[\s\S]*<\/inventors>')
+   applicant_cited_p = re.compile('<category>cited by applicant<\/category>')
+   inventor_tag_lazy_p = re.compile('<inventor .*>[\s\S]*?<\/inventor>')
+   inventor_first_name_p = re.compile('<first-name>.*<\/first-name>')
+   inventor_last_name_p = re.compile('<last-name>.*<\/last-name>')
+
+   claims_tag_p = re.compile("<claims.*>[\s\S]*<\/claims>")
+   every_claim_lazy_p = re.compile('<claim id.*>[\s\S]*?<\/claim>')
+   claim_text_tag_p = re.compile('<claim-text>[\s\S]*<\/claim-text>')
+
    __us_patent_grant_tag_p = re.compile("<us-patent-grant.*>")
    __docnum_filename_p = re.compile('file="[A-Z0-9]*')
    __file_and_dash_p = re.compile('file="')
@@ -43,6 +53,12 @@ class Patent:
       self.citations_examiner_count = self.extract_citations_examiner_count()
       self.claims_text = self.extract_claims_text()
       self.abstract = self.extract_abstract()
+   
+   def ordered_attr_list():
+      return ["grant_id","patent_title","kind","number_of_claims","inventors","citations_app_count","citations_examiner_count","claims_text","abstract"]
+   
+   def value_list():
+      return [self.grant_id, self.patent_title, self.kind, self.number_of_claims, self.inventors, self.citations_app_count, self.citations_examiner_count, self.claims_text, self.abstract]
    
    def __extract_grant_id(self):
       enable_log = True   
@@ -101,17 +117,41 @@ class Patent:
       return int(self.cleanup(num_claims))
 
    def extract_inventors(self):
-      return "None"
+      inventors_tag = re.findall(Patent.inventors_tag_p, self.raw)
+      inventors = re.findall(Patent.inventor_tag_lazy_p, inventors_tag[0])
+      name_template = "{0} {1}"
+
+      inventor_names = []
+
+      for inventor in inventors:
+         first_name = re.find(Patent.inventor_first_name_p)
+         last_name = re.find(Patent.inventor_last_name_p)
+         inventor_names.append(name_template.format(first_name, last_name))
+      
+
+      return "[%s]"%(','.join(inventor_names))
 
    def extract_citations_app_count(self):
-      return "None"
+      applicant_citations = re.findall(Patent.applicant_cited_p, self.raw)
+      return len(applicant_citations)
+
 
    def extract_citations_examiner_count(self):      
       examiner_citations = re.findall(Patent.__cited_by_examiner_p, self.raw)
       return len(examiner_citations)
 
+
    def extract_claims_text(self):
-      return "None"
+      claims_tag = re.findall(Patent.claims_tag_p, self.raw)
+      #has to be findall below
+      claims = re.findall(Patent.every_claim_lazy_p, claims_tag[0])
+      claims_text = []
+
+      for claim in claims:
+         claim_txt = re.findall(Patent.claim_text_tag_p, self.raw)
+         claims_text.append(self.cleanup(claim_txt))
+      
+      return "[{0}]".format(','.join(claims_text))
 
    def cleanup(self, string):
       i = 0
@@ -210,4 +250,6 @@ if __name__ == "__main__":
    test_field(patents, sample_output, 'number_of_claims')
    test_field(patents, sample_output, 'citations_examiner_count')
    test_field(patents, sample_output, 'kind')
-
+   test_field(patents, sample_output, 'inventors')
+   test_field(patents, sample_output, 'citations_applicant_count')
+   test_field(patents, sample_output, 'claims_text')
