@@ -23,10 +23,8 @@ class Patent:
 
    __patent_templ = "{0} Patent Grant ({1} published application) issued on or after January 2, 2001{2}"
    gen_kind = {
-      "design": (lambda kindcode: "Design Patent"),
       "plant": (lambda kindcode: Patent.__patent_templ.format("Plant", "with a", "") if kindcode == "P3" else Patent.__patent_templ.format("Plant", "no", "")),
       "utility": (lambda kindcode: Patent.__patent_templ.format("Utility", "with a", ".") if kindcode == "B2" else Patent.__patent_templ.format("Utility", "no", ".")),
-      "reissue": (lambda kindcode: "Reissue Patent")
    }
 
    __codes = [{"find": re.compile("&#x2018;"), "replace":"\u2018"},
