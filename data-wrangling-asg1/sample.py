@@ -3,33 +3,34 @@ import re
 import json
 
 class Patent:
-   inventors_tag_p = re.compile('<inventors>[\s\S]*<\/inventors>')
-   applicant_cited_p = re.compile('<category>cited by applicant<\/category>')
-   inventor_tag_lazy_p = re.compile('<inventor .*>[\s\S]*?<\/inventor>')
-   inventor_first_name_p = re.compile('<first-name>.*<\/first-name>')
-   inventor_last_name_p = re.compile('<last-name>.*<\/last-name>')
+   inventors_tag_p = re.compile(r'<inventors>[\s\S]*<\/inventors>')
+   applicant_cited_p = re.compile(r'<category>cited by applicant<\/category>')
+   inventor_tag_lazy_p = re.compile(r'<inventor .*>[\s\S]*?<\/inventor>')
+   inventor_first_name_p = re.compile(r'<first-name>.*<\/first-name>')
+   inventor_last_name_p = re.compile(r'<last-name>.*<\/last-name>')
 
-   claims_tag_p = re.compile("<claims.*>[\s\S]*<\/claims>")
-   every_claim_lazy_p = re.compile('<claim id.*>[\s\S]*?<\/claim>')
-   claim_text_tag_p = re.compile('<claim-text>[\s\S]*<\/claim-text>')
+   claims_tag_p = re.compile(r"<claims.*>[\s\S]*<\/claims>")
+   every_claim_lazy_p = re.compile(r'<claim id.*>[\s\S]*?<\/claim>')
+   claim_text_tag_p = re.compile(r'<claim-text>[\s\S]*<\/claim-text>')
 
-   __us_patent_grant_tag_p = re.compile("<us-patent-grant.*>")
-   __docnum_filename_p = re.compile('file="[A-Z0-9]*')
-   __file_and_dash_p = re.compile('file="')
+   __us_patent_grant_tag_p = re.compile(r"<us-patent-grant.*>")
+   __docnum_filename_p = re.compile(r'file="[A-Z0-9]*')
+   __file_and_dash_p = re.compile(r'file="')
 
-   __invention_title_tag_p = re.compile('<invention-title\sid=".*">.*<\/invention-title>')
-   __only_invention_title_tag_p = re.compile('(<invention-title\sid=".*">|<\/invention-title>)')
+   __invention_title_tag_p = re.compile(r'<invention-title\sid=".*">.*<\/invention-title>')
+   __only_invention_title_tag_p = re.compile(r'(<invention-title\sid=".*">|<\/invention-title>)')
 
    __abstract_tag_p = re.compile(r'<abstract id="abstract">[\s\S]*<\/abstract>')
    __non_abstract_text = re.compile(r'(<abstract id="abstract">|<\/abstract>|<p.*">|<\/p>)')
-   __remove_tags_p = re.compile(r'(<[\s\w=\-"]*>|<\/[-\w]+>)')
+   __remove_tags_p = re.compile(r'(<[\s\w\W=\-"]*?>|<\/[-\w]+>)')
+   __remove_tags_old = re.compile(r'(<[\s\w=\-"]*>|<\/[-\w]+>)')
    __num_claims_p = re.compile(r'<number-of-claims>\d*<\/number-of-claims>')
    __cited_by_examiner_p = re.compile(r"<category>cited by examiner<\/category>")
 
-   publish_and_application_reference_p = re.compile("(<(publication|application)-reference.*>[\s\S]*<\/(publication|application)-reference>)")
-   app_type_tag = re.compile('<application-reference appl-type="\w+">')
+   publish_and_application_reference_p = re.compile(r"(<(publication|application)-reference.*>[\s\S]*<\/(publication|application)-reference>)")
+   app_type_tag = re.compile(r'<application-reference appl-type="\w+">')
    app_type_only = re.compile(r'"\w+"')
-   kind_tag = re.compile("<kind>\w+<\/kind>")
+   kind_tag = re.compile(r"<kind>\w+<\/kind>")
 
    __patent_templ = "{0} Patent Grant ({1} published application) issued on or after January 2, 2001{2}"
    gen_kind = {
@@ -37,22 +38,29 @@ class Patent:
       "utility": (lambda kindcode: Patent.__patent_templ.format("Utility", "with a", ".") if kindcode == "B2" else Patent.__patent_templ.format("Utility", "no", ".")),
    }
 
-   __codes = [{"find": re.compile("&#x2018;"), "replace":"\u2018"},
-   {"find": re.compile("&#x2019;"), "replace":"\u2019"}]
+   __codes = [{"find": re.compile(r"&#x2018;"), "replace":"\u2018"},
+   {"find": re.compile(r"&#x2019;"), "replace":"\u2019"},
+   {"find": re.compile(r"&#xe7;"), "replace":"\u00e7"}, 
+   {"find": re.compile(r"&#xb0;"), "replace":"\u00b0"},
+   {"find": re.compile(r"&#x2261;"), "replace":"\u2261"},
+   {"find": re.compile(r"&#x2212;"), "replace":"\u2212"},
+   {"find": re.compile(r"&#x3c;"), "replace":"\u003c"},
+   {"find": re.compile(r"&#x394;"), "replace":"\u0394"}
+   ]
 
-   ordered_attr_list = ["grant_id","patent_title","kind","number_of_claims","inventors","citations_applicant_count","citations_examiner_count","claims_text","abstract"]
+   ordered_attr_list = ["grant_id","patent_title","kind","number_of_claims","inventors",
+   "citations_applicant_count","citations_examiner_count","claims_text","abstract"]
 
    def __init__(self, raw_xml):
-      self.raw = raw_xml
-      self.grant_id = self.__extract_grant_id()
-      self.patent_title = self.extract_patent_title()
-      self.kind = self.extract_kind()      
-      self.number_of_claims = self.extract_number_of_claims()
-      self.inventors = self.extract_inventors()
-      self.citations_applicant_count = self.extract_citations_app_count()
-      self.citations_examiner_count = self.extract_citations_examiner_count()
-      self.claims_text = self.extract_claims_text()
-      self.abstract = self.extract_abstract()
+      self.grant_id = self.__extract_grant_id(raw_xml)
+      self.patent_title = self.extract_patent_title(raw_xml)
+      self.kind = self.extract_kind(raw_xml)      
+      self.number_of_claims = self.extract_number_of_claims(raw_xml)
+      self.inventors = self.extract_inventors(raw_xml)
+      self.citations_applicant_count = self.extract_citations_app_count(raw_xml)
+      self.citations_examiner_count = self.extract_citations_examiner_count(raw_xml)
+      self.claims_text = self.extract_claims_text(raw_xml)
+      self.abstract = self.extract_abstract(raw_xml)
       self.ordered_val_list = [self.grant_id, self.patent_title, self.kind, self.number_of_claims, self.inventors, self.citations_applicant_count, self.citations_examiner_count, self.claims_text, self.abstract]
 
    
@@ -67,46 +75,37 @@ class Patent:
       return str(jsonObj)
       
    
-   def __extract_grant_id(self):
-      enable_log = True   
-      patent_grant_tag = re.findall(Patent.__us_patent_grant_tag_p, self.raw)
-      debug(patent_grant_tag, Patent.__us_patent_grant_tag_p, enable_log)      
+   def __extract_grant_id(self, raw_xml): 
+      patent_grant_tag = re.findall(Patent.__us_patent_grant_tag_p, raw_xml)   
       docnum_filename  = re.findall(Patent.__docnum_filename_p, patent_grant_tag[0])
-      debug(docnum_filename, Patent.__docnum_filename_p, enable_log)
-      
       gid = re.sub(Patent.__file_and_dash_p, "", docnum_filename[0])
       
       return gid
 
-   def extract_patent_title(self):
+   def extract_patent_title(self, raw_xml):
       enable_log = True
-      invention_title_tag = re.findall(Patent.__invention_title_tag_p, self.raw)
-      debug(invention_title_tag, Patent.__invention_title_tag_p, enable_log)
+      invention_title_tag = re.findall(Patent.__invention_title_tag_p, raw_xml)
 
       title = re.sub(Patent.__only_invention_title_tag_p, "", invention_title_tag[0])
-      return self.cleanup(title)
+      return self.html_hex_to_unicode(title)
 
-   def extract_abstract(self):
+   def extract_abstract(self, raw_xml):
       enable_log = True
-      abstract_tag = re.findall(Patent.__abstract_tag_p, self.raw)
+      abstract_tag = re.findall(Patent.__abstract_tag_p, raw_xml)
 
       if len(abstract_tag) == 0:
          return "NA"
       else:
-         debug(abstract_tag, Patent.__abstract_tag_p, enable_log)
          abstract = re.sub(Patent.__remove_tags_p, "", abstract_tag[0])         
-         return self.cleanup(abstract)
+         return self.html_hex_to_unicode(abstract)
 
-   def extract_kind(self):
+   def extract_kind(self, raw_xml):
       enable_log = True
-      p_a_tags = re.findall(Patent.publish_and_application_reference_p, self.raw)
-      debug(p_a_tags, Patent.publish_and_application_reference_p, enable_log)
+      p_a_tags = re.findall(Patent.publish_and_application_reference_p, raw_xml)
 
       app_tag = re.findall(Patent.app_type_tag, p_a_tags[0][0])      
-      debug(app_tag, Patent.app_type_tag, enable_log)
       
       app_type = re.findall(Patent.app_type_only, app_tag[0])
-      debug(app_type, Patent.app_type_only, enable_log)
 
       kind_patent = app_type[0].strip('"')
 
@@ -118,54 +117,63 @@ class Patent:
       else:
          return "%s Patent"%(kind_patent[0].upper() + kind_patent[1:])
 
-   def extract_number_of_claims(self):
-      num_claims_tag = re.findall(Patent.__num_claims_p, self.raw)
+   def extract_number_of_claims(self, raw_xml):
+      num_claims_tag = re.findall(Patent.__num_claims_p, raw_xml)
       num_claims = re.sub(Patent.__remove_tags_p, "", num_claims_tag[0])
-      return int(self.cleanup(num_claims))
+      return int(self.html_hex_to_unicode(num_claims))
 
-   def extract_inventors(self):
-      inventors_tag = re.findall(Patent.inventors_tag_p, self.raw)
+   def extract_inventors(self, raw_xml):
+      inventors_tag = re.findall(Patent.inventors_tag_p, raw_xml)
       inventors = re.findall(Patent.inventor_tag_lazy_p, inventors_tag[0])
       name_template = "{0} {1}"
 
       inventor_names = []
 
       for inventor in inventors:
-         first_name = re.match(Patent.inventor_first_name_p, inventor)
-         last_name = re.match(Patent.inventor_last_name_p, inventor)
+         first_name_tag = re.search(Patent.inventor_first_name_p, inventor).group()
+         last_name_tag = re.search(Patent.inventor_last_name_p, inventor).group()
+         first_name = self.html_hex_to_unicode(re.sub(Patent.__remove_tags_p, "", first_name_tag))
+         last_name = self.html_hex_to_unicode(re.sub(Patent.__remove_tags_p, "", last_name_tag))
          inventor_names.append(name_template.format(first_name, last_name))
-      
 
       return "[%s]"%(','.join(inventor_names))
 
-   def extract_citations_app_count(self):
-      applicant_citations = re.findall(Patent.applicant_cited_p, self.raw)
+   def extract_citations_app_count(self, raw_xml):
+      applicant_citations = re.findall(Patent.applicant_cited_p, raw_xml)
       return len(applicant_citations)
 
 
-   def extract_citations_examiner_count(self):      
-      examiner_citations = re.findall(Patent.__cited_by_examiner_p, self.raw)
+   def extract_citations_examiner_count(self, raw_xml):      
+      examiner_citations = re.findall(Patent.__cited_by_examiner_p, raw_xml)
       return len(examiner_citations)
 
 
-   def extract_claims_text(self):
-      claims_tag = re.findall(Patent.claims_tag_p, self.raw)
+   def extract_claims_text(self, raw_xml):
+      claims_tag = re.findall(Patent.claims_tag_p, raw_xml)
       #has to be findall below
       claims = re.findall(Patent.every_claim_lazy_p, claims_tag[0])
+      
       claims_text = []
 
       for claim in claims:
-         claim_txt = re.findall(Patent.claim_text_tag_p, self.raw)
-         claims_text.append(self.cleanup(claim_txt[0]))
+         claim_txt_dirty = re.findall(Patent.claim_text_tag_p, claim)
+         claim_txt = re.sub(Patent.__remove_tags_p, "", claim_txt_dirty[0])
+         claim_txt = Patent.html_hex_to_unicode(claim_txt)
+         claim_txt = re.sub(r"\n+\s*", "", claim_txt)
+         claims_text.append(claim_txt)
       
       return "[{0}]".format(','.join(claims_text))
 
-   def cleanup(self, string):
-      i = 0
-      while i < len(Patent.__codes):
-         string = re.sub(Patent.__codes[i]["find"], Patent.__codes[i]["replace"], string)
-         i += 1
+   @staticmethod
+   def html_hex_to_unicode(string):
+      for code_map in Patent.__codes:
+         string = re.sub(code_map["find"], code_map["replace"], string)
+
       return string.rstrip().lstrip()
+   
+   @staticmethod
+   def remove_tags(string):
+      return re.sub(Patent.__remove_tags_p, "", string)
 
 def main(sample):
    xmlpattern = re.compile(r"<us-patent-grant[\s\S]*?</us-patent-grant>")
@@ -213,6 +221,11 @@ def comp(str1, str2):
       
       if str1[i] != str2[i]:
          print("First non-match: [%s] to [%s]" %(str1[i], str2[i]))
+         with open("D:\\Workspace\\postgraduate-projects\\data-wrangling-asg1\\debug.txt", "w", encoding='utf-8') as xml_file:
+            xml_file.write("{0}\n{1}\n\n".format(str1[i], str2[i]))
+            xml_file.write(str1  + "\n\n\n===str2===\n\n")
+            xml_file.write(str2)
+
          return
       i+=1
    
@@ -233,13 +246,6 @@ def test_grant_id(patents, sample):
    else:
       print("FAILED grant_id test with %d failures" %(num_grants - correct_ids))
 
-def debug(matches, pattern, enabled):
-   if enabled == False:
-      return
-
-   match_len = len(matches)
-   if match_len != 1:
-      print("Number of matches (%s) for pattern (%s)" %(match_len, pattern))
 
 if __name__ == "__main__":
    xml_file = open("D:\\Workspace\\postgraduate-projects\\data-wrangling-asg1\\Sample_input.xml", "r")
@@ -258,5 +264,5 @@ if __name__ == "__main__":
    test_field(patents, sample_output, 'citations_examiner_count')
    test_field(patents, sample_output, 'kind')
    test_field(patents, sample_output, 'citations_applicant_count')
-   #test_field(patents, sample_output, 'inventors')   
-   #test_field(patents, sample_output, 'claims_text')
+   test_field(patents, sample_output, 'inventors')   
+   test_field(patents, sample_output, 'claims_text')
