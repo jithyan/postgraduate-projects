@@ -48,7 +48,55 @@ class Patent:
    {"find": re.compile(r"&#x2261;"), "replace":"\u2261"},
    {"find": re.compile(r"&#x2212;"), "replace":"\u2212"},
    {"find": re.compile(r"&#x3c;"), "replace":"\u003c"},
-   {"find": re.compile(r"&#x394;"), "replace":"\u0394"}
+   {"find": re.compile(r"&#x394;"), "replace":"\u0394"},
+   {"find": re.compile(r"&#x2003;"), "replace":"\u2003"},
+   {"find": re.compile(r"&#x2032;"), "replace":"\u2032"},
+   {"find": re.compile(r"&#x201d;"), "replace":"\u0201d"},
+   {"find": re.compile(r"&#x201c;"), "replace":"\u0201c"},
+   {"find": re.compile(r"&#x3b3;"), "replace":"\u03b3"},
+   {"find": re.compile(r"&#x3b2;"), "replace":"\u03b2"},
+   {"find": re.compile(r"&#x3b1;"), "replace":"\u03b1"},
+   {"find": re.compile(r"&#x22c5;"), "replace":"\u22c5"},
+   {"find": re.compile(r"&#x2062;"), "replace":"\u2062"},
+   {"find": re.compile(r"&#x2014;"), "replace":"\u2014"},
+   {"find": re.compile(r"&#xd7;"), "replace":"\u00d7"},
+   {"find": re.compile(r"&#xee;"), "replace":"\u00ee"},
+   {"find": re.compile(r"&#x2208;"), "replace":"\u2208"},
+   {"find": re.compile(r"&#x2264;"), "replace":"\u2264"},
+   {"find": re.compile(r"&#x2243;"), "replace":"\u2243"},
+   {"find": re.compile(r"&#x2260;"), "replace":"\u2260"},
+   {"find": re.compile(r"&#xbd;"), "replace":"\u00bd"},
+   {"find": re.compile(r"&#x2192;"), "replace":"\u2192"},
+   {"find": re.compile(r"&#x22ef;"), "replace":"\u22ef"},
+   {"find": re.compile(r"&#x2026;"), "replace":"\u2026"},
+   {"find": re.compile(r"&#x2115;"), "replace":"\u2115"},
+   {"find": re.compile(r"&#x22ee;"), "replace":"\u22ee"},
+   {"find": re.compile(r"&#x22f1;"), "replace":"\u22f1"},
+   {"find": re.compile(r"&#x211d;"), "replace":"\u211d"},
+   {"find": re.compile(r"&#x2102;"), "replace":"\u2102"},
+   {"find": re.compile(r"&#x2211;"), "replace":"\u2211"},
+   {"find": re.compile(r"&#x2061;"), "replace":"u\2061"},
+   {"find": re.compile(r"&#x2a53;"), "replace":"u\2a53"},
+   {"find": re.compile(r"&#x2200;"), "replace":"u\2200"},
+   {"find": re.compile(r"&#x3c4;"), "replace":"u\03c4"},
+   {"find": re.compile(r"&#x175;"), "replace":"u\0175"},
+   {"find": re.compile(r"&#xe1;"), "replace":"u\00e1"},
+   {"find": re.compile(r"&#x2dc;"), "replace":"u\02dc"},
+   {"find": re.compile(r"&#x212b;"), "replace":"u\212b"},
+   {"find": re.compile(r"&#x3bc;"), "replace":"u\03bc"},
+   {"find": re.compile(r"&#xfd;"), "replace":"u\00fd"},
+   {"find": re.compile(r"&#xfa;"), "replace":"u\00fa"},
+   {"find": re.compile(r"&#xe9;"), "replace":"u\00e9"},
+   {"find": re.compile(r"&#x26;"), "replace":"u\0026"},
+   {"find": re.compile(r"&#xfc;"), "replace":"u\00fc"},
+   {"find": re.compile(r"&#xf6;"), "replace":"u\00f6"},
+   {"find": re.compile(r"&#x3e;"), "replace":"u\003e"},
+   {"find": re.compile(r"&#x3b8;"), "replace":"u\03b8"},
+   {"find": re.compile(r"&#x3b7;"), "replace":"u\03b7"},
+   {"find": re.compile(r"&#xb7;"), "replace":"u\00b7"},
+   {"find": re.compile(r"&#xef;"), "replace":"u\00ef"},
+   {"find": re.compile(r"&#x3c3;"), "replace":"u\03c3"},
+   {"find": re.compile(r"&#x221a;"), "replace":"u\221a"},
    ]
 
    ordered_attr_list = ["grant_id","patent_title","kind","number_of_claims","inventors",
@@ -66,16 +114,20 @@ class Patent:
       self.abstract = self.__extract_abstract(raw_xml)
       self.ordered_val_list = [self.grant_id, self.patent_title, self.kind, self.number_of_claims, self.inventors, self.citations_applicant_count, self.citations_examiner_count, self.claims_text, self.abstract]
 
-   
-   def toJsonString(self):
-      innerObj = {}
-      for attr in ordered_attr_list:
-         if attr != "grant_id":
-            innerObj[attr] = getattr(self,attr)
-      
-      jsonObj = {getattr(self, "grant_id"): innerObj}
 
-      return str(jsonObj)
+   def to_json_format(self):
+      values = []
+      for pair in zip(Patent.ordered_attr_list, self.ordered_val_list):
+         if pair[0] != "grant_id":
+            if isinstance(pair[1], int):
+               field_value = '"{0}":{1}'.format(pair[0], pair[1])
+            else:
+               field_value = '"{0}":"{1}"'.format(pair[0], pair[1])
+
+            values.append(field_value)
+
+      jsonObj = {getattr(self, "grant_id"): "{" + ",".join(values) + "}"}
+      return jsonObj
       
 
 
@@ -163,7 +215,7 @@ class Patent:
          claim_txt = Patent.html_hex_to_unicode(Patent.remove_tags(claim_txt_dirty))
          claim_txt = re.sub(Patent.__remove_newline_whitespace_p, "", claim_txt)
          claims_text.append(claim_txt)
-      
+
       return "[{0}]".format(','.join(claims_text))
 
    @staticmethod
@@ -172,10 +224,12 @@ class Patent:
          string = re.sub(code_map["find"], code_map["replace"], string)
 
       return string.strip()
+
    
    @staticmethod
    def remove_tags(string):
       return re.sub(Patent.__remove_tags_p, "", string)
+
 
 def extract_patents(contents):
    xmlpattern = re.compile(r"<us-patent-grant[\s\S]*?</us-patent-grant>")
@@ -210,6 +264,15 @@ def test_field(patents, sample, field_name):
       print("PASS: Correctly identified all '%s' in sample" %(field_name))
    else:
       print("FAILED '%s' test with %d failures" %(field_name, num_grants - num_correct))
+
+
+def convert_to_json_string(dic):
+   patents = []
+   for p in zip(dic.keys(), dic.values()):
+      patents.append('"{0}":{1}'.format(p[0], p[1]))
+      
+   return "{" + ",".join(patents) + "}"
+
 
 def comp(str1, str2):
    lens1 = len(str1)
@@ -251,15 +314,41 @@ def test_grant_id(patents, sample):
 
 
 if __name__ == "__main__":
-   xml_file = open("D:\\Workspace\\postgraduate-projects\\data-wrangling-asg1\\Sample_input.xml", "r")
+   #xml_file = open("D:\\Workspace\\postgraduate-projects\\data-wrangling-asg1\\Sample_input.xml", "r")
+   xml_file = open("D:\\Workspace\\postgraduate-projects\\data-wrangling-asg1\\Group059.txt", "r")
    sample_input = xml_file.read()
    xml_file.close()
-
+   """
    json_file =  open('D:\\Workspace\\postgraduate-projects\\data-wrangling-asg1\\sample_output.json', encoding='utf-8')
    sample_output = json.load(json_file)
    json_file.close()
-
+   """
+   
    patents = extract_patents(sample_input)
+   with open("D:\\Workspace\\postgraduate-projects\\data-wrangling-asg1\\new2.json", "w", encoding="utf-8") as fp:
+      a = pd.DataFrame([p.ordered_val_list for p in patents])
+      a.columns = Patent.ordered_attr_list
+      a.to_csv("new2.csv", sep=',', encoding='utf-8', index=False)
+      j = {}
+      for p in patents:
+        j.update(p.to_json_format())
+      fp.write(convert_to_json_string(j))
+      fp.close()
+   
+   with open("new2.csv", "r", encoding="utf-8") as q:
+      content = q.read()
+      content = re.sub("\s{2,}", " ", content);
+      with open("cleaned.csv", "w", encoding="utf-8") as tf:
+         tf.write(content)
+   
+   with open("new2.json", "r", encoding="utf-8") as wj:
+         jc = wj.read()
+         jc = re.sub("\s{2,}", " ", jc);
+         with open("cleaned.json", "w", encoding="utf-8") as wf:
+            wf.write(jc)
+   
+
+   """ 
    test_grant_id(patents, sample_output)
    test_field(patents, sample_output, 'patent_title')
    test_field(patents, sample_output, 'abstract')
@@ -269,3 +358,5 @@ if __name__ == "__main__":
    test_field(patents, sample_output, 'citations_applicant_count')
    test_field(patents, sample_output, 'inventors')   
    test_field(patents, sample_output, 'claims_text')
+   """
+   
