@@ -370,10 +370,12 @@ if __name__ == "__main__":
     """
     vocab = set(chain.from_iterable(tokenized_bodies.values()))
     df = gen_doc_freq(tokenized_bodies, vocab)
+    with open(CURR_DIR + "df.json", "w", encoding="utf-16") as j:
+        json.dump(df, j)
 
     # Filter all terms who appear in under 3% or over 95% of documents from
     # vocab
-    vocab = set(filter_tokens(lambda t: df[t] >= 6 or df[t] <= 190, vocab))
+    vocab = set(filter_tokens(lambda t: df[t] >= 6 and df[t] <= 190, vocab))
 
     # Filter tokens from bodies that are not in vocab
     tokenized_bodies = dict(
