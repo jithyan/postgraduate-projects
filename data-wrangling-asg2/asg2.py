@@ -334,7 +334,7 @@ if __name__ == "__main__":
     - Read the converted texts, parse the abstract, bodies, titles and authors 
       into Paper objects
     """
-    # parse_download_convert_pdfs()
+    parse_download_convert_pdfs()
     papers = parse_papers()
     stopwords = load_stopwords()
 
@@ -370,8 +370,6 @@ if __name__ == "__main__":
     """
     vocab = set(chain.from_iterable(tokenized_bodies.values()))
     df = gen_doc_freq(tokenized_bodies, vocab)
-    with open(CURR_DIR + "df.json", "w", encoding="utf-16") as j:
-        json.dump(df, j)
 
     # Filter all terms who appear in under 3% or over 95% of documents from
     # vocab
