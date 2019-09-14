@@ -2,10 +2,17 @@ import re
 import requests
 from multiprocessing import Pool
 from collections import namedtuple
-
 from itertools import chain
+from collections import defaultdict
+
+import json
+
 from nltk.tokenize import RegexpTokenizer
+from nltk.tokenize import MWETokenizer
 import nltk.data
+from nltk.probability import FreqDist
+from nltk.collocations import *
+from nltk.stem import PorterStemmer
 
 # Related to PDFminer
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -19,6 +26,11 @@ PaperDetail = namedtuple("PaperDetail", "id url")
 
 
 def convert_pdf_to_txt(path):
+    """
+    Function to conveniently convert a PDF to text in Python itself.
+    Lifted from:
+    https://stackoverflow.com/questions/26494211/extracting-text-from-a-pdf-file-using-pdfminer-in-python
+    """
     rsrcmgr = PDFResourceManager()
     retstr = StringIO()
     codec = "utf-8"
@@ -50,11 +62,17 @@ def convert_pdf_to_txt(path):
 
 
 def read_file_text(file_path):
+    """
+    Helper function to read the text in UTF-16 from a file
+    """
     with open(file_path, "r", encoding="utf-16") as f:
         return f.read()
 
 
 def parse_paper_details(text):
+    """
+    Parse the IDs and URLs from the PDF with a list of URLs
+    """
     url_reg = re.compile(
         r"PP\d+.pdf https://drive.google.com/uc\?export=download&id=[\w-]+\s"
     )
@@ -70,6 +88,9 @@ def parse_paper_details(text):
 
 
 def download_files(paper_details):
+    """
+    Download using the given URLs to a file with the name {paper_id}.pdf
+    """
     for detail in paper_details:
         resp = requests.get(detail.url)
         with open("{0}{1}.pdf".format(CURR_DIR, detail.id), "wb") as f:
@@ -77,6 +98,9 @@ def download_files(paper_details):
 
 
 def write_pdf_to_txt_file(pdf_path):
+    """
+    Convert a given PDF to a TXT file
+    """
     txt_path = re.sub(".pdf", ".txt", pdf_path)
     print(txt_path)
     with open(txt_path, "w", encoding="utf-16") as txt_file:
@@ -84,11 +108,18 @@ def write_pdf_to_txt_file(pdf_path):
 
 
 def convert_pdfs(pdf_paths):
+    """
+    Convert the pdfs in a given list of pdf paths to text files
+    """
     for pdf_path in pdf_paths:
         write_pdf_to_txt_file(pdf_path)
 
 
 def parse_download_convert_pdfs():
+    """
+    Convert the PDF with a list of URLs to text, parse the filenames and URLS,
+    then download each PDF and convert the pdf to text.
+    """
     pool = Pool(processes=6)
     chunk_size = 20
 
@@ -148,6 +179,10 @@ class Paper:
 
 
 def parse_papers():
+    """
+    Read all the converted paper texts and parse their body, titles, abstract and authors.
+    Returns a list of Paper objects
+    """
     paper_details = parse_paper_details(read_file_text(CURR_DIR + "Group059.txt"))
     papers = []
     for detail in paper_details:
@@ -164,14 +199,24 @@ def load_stopwords():
 
 
 def filter_tokens(f, token_list):
+    """
+    Return a new list based on the result of the given function f
+    """
     return [t for t in token_list if f(t) is True]
 
 
 def extract_unigram_tokens(paper_body, stopwords):
+    """
+    Tokenize a paper body, remove context independent stopwords,
+    filter tokens with length <= 2 and normalize only the first
+    token of a sentence.
+
+    Return the  processed unigram tokens
+    """
     tokenizer = RegexpTokenizer(r"[A-Za-z]\w+(?:[-'?]\w+)?")
     sent_detector = nltk.data.load("tokenizers/punkt/english.pickle")
 
-    sentences = sent_detector.tokenize(paper_body)    
+    sentences = sent_detector.tokenize(paper_body)
     tokenized_sentences = [tokenizer.tokenize(s) for s in sentences]
     for s in tokenized_sentences:
         if len(s) > 0:
@@ -183,43 +228,161 @@ def extract_unigram_tokens(paper_body, stopwords):
     ]
 
     tokenized_sents_gt_2_no_stopwords = [
-        filter_tokens(lambda token: len(token) > 2, s) 
+        filter_tokens(lambda token: len(token) > 2, s)
         for s in tokenized_sents_no_stopwords
     ]
     return list(chain.from_iterable(tokenized_sents_gt_2_no_stopwords))
 
 
 def get_top_200_bigrams(token_list):
-    return []
+    """
+    Find the top 200 bigrams in a list of tokens
+    """
+    bigram_measures = nltk.collocations.BigramAssocMeasures()
+    bigram_finder = nltk.collocations.BigramCollocationFinder.from_words(token_list)
+    bigram_finder.apply_freq_filter(20)
+    return bigram_finder.nbest(bigram_measures.pmi, 200)
 
 
 def multiword_tokenizer(token_list, bigram_list):
-    return []
+    """
+    Tokenize a list of unigram tokens into bigram tokens,
+    given a list of bigrams.
+    Bigrams are separated with "__"
+    """
+    mwetokenizer = MWETokenizer(bigram_list, separator="__")
+    return mwetokenizer.tokenize(token_list)
 
 
 def stem_tokens(token_list):
-    return token_list
+    """
+    Stem every tokenn that is not a bigram - bigrams are identified 
+    as tokens with "__" in them.
+    In order to preserve the casing of the token, the following code based on a
+    stack overflow answer was used.
+    https://stackoverflow.com/questions/57917203/maintain-proper-nouns-and-capitalised-words-while-stemming
+    """
+    stemmer = PorterStemmer()
+    stemmed_list = []
+    for token in token_list:
+        if "__" not in token:
+            if token == token.title():
+                stemmed_token = stemmer.stem(token).capitalize()
+            elif token.isupper():
+                stemmed_token = stemmer.stem(token).upper()
+            else:
+                stemmed_token = stemmer.stem(token)
+            stemmed_list.append(stemmed_token)
+        else:
+            stemmed_list.append(token)
+
+    return stemmed_list
 
 
-def filter_rare_tokens(token_list):
-    return token_list
+def gen_doc_freq(paper_tokens, vocab):
+    """
+    Return a count of the number of documents ever term in the
+    vocab exists in,
+    in a dictionary in the form:
+        {
+            term_1: num_documents_it_occurs,
+            ...
+            term_n: num_documents_it_occurs
+        }
+    """
+    df = defaultdict(int)
+    for word in vocab:
+        for token_list in paper_tokens.values():
+            if word in token_list:
+                df[word] += 1
+
+    return df
 
 
-def generate_vocab(token_list):
-    return {}
+def write_vocab_to_file(vocab):
+    """
+    Write every vocab word in a line to a file in the format:
+    word:word_id
+    """
+    vocab_id_list = [
+        "{0}:{1}".format(v, vocab_id[v]) for v in sorted(list(vocab_id.keys()))
+    ]
+    with open(CURR_DIR + "GROUP059_vocab.txt", "w", encoding="utf-16") as v:
+        v.write("\n".join(vocab_id_list))
 
 
-def gen_sparse_vector(token_list):
-    return {}
+def write_term_counts(tokenized_bodies, vocab_id):
+    """
+    Calculate the term frequencies of every paper body,
+    map the terms to the ID in the vocab,
+    then write the output in the format:
+    paper_id,term1:term1_freq, ..., termn:termn_freq
+    """
+    with open(CURR_DIR + "GROUP059_count_vectors.txt", "w", encoding="utf-16") as t:
+        for paper_id, token_list in tokenized_bodies.items():
+            fd = FreqDist(token_list)
+            counts = ["{0}:{1}".format(vocab_id[t], v) for t, v in fd.items()]
+            line = [paper_id] + counts
+            t.write(",".join(line) + "\n")
 
 
 if __name__ == "__main__":
-    #parse_download_convert_pdfs()
+    """
+    CORPUS EXTRACTION:
+    - Parse PDF for research papers to download.
+    - Download the papers, convert to text.
+    - Read the converted texts, parse the abstract, bodies, titles and authors 
+      into Paper objects
+    """
+    # parse_download_convert_pdfs()
     papers = parse_papers()
     stopwords = load_stopwords()
 
-    tokenized_bodies = {}
+    """
+    SPARSE FEATURE GENERATION
+    Tokenize paper bodies - tokens won't contain stopwords, len(token) > 2 and 
+    only first token of a sentence is normalized
+    """
+    tokenized_bodies = dict(
+        (paper.id, extract_unigram_tokens(paper.body, stopwords)) for paper in papers
+    )
 
-    for paper in papers:
-        tokenized_bodies[paper.id] = extract_unigram_tokens(paper.body, stopwords)
-    print(tokenized_bodies["PP3387"])
+    # Find the top 200 bigrams in the entire corpus
+    corpus_tokens = list(chain.from_iterable(tokenized_bodies.values()))
+    vocab_bigrams_200 = get_top_200_bigrams(corpus_tokens)
+
+    # Re-tokenize the paper body tokens so that bigrams are presented
+    # as a single token separated with "__"
+    tokenized_bodies = dict(
+        (paper_id, multiword_tokenizer(tokens, vocab_bigrams_200))
+        for paper_id, tokens in tokenized_bodies.items()
+    )
+
+    # Stem every token that is not a bigram
+    tokenized_bodies = dict(
+        (paper_id, stem_tokens(tokens)) 
+        for paper_id, tokens in tokenized_bodies.items()
+    )
+
+    """
+    Determine the vocab of the entire corpus, then generate the document 
+    frequency  of every stemmed term
+    """
+    vocab = set(chain.from_iterable(tokenized_bodies.values()))
+    df = gen_doc_freq(tokenized_bodies, vocab)
+
+    # Filter all terms who appear in under 3% or over 95% of documents from
+    # vocab
+    vocab = set(filter_tokens(lambda t: df[t] >= 6 or df[t] <= 190, vocab))
+
+    # Filter tokens from bodies that are not in vocab
+    tokenized_bodies = dict(
+        (paper_id, filter_tokens(lambda t: t in vocab, tokens))
+        for paper_id, tokens in tokenized_bodies.items()
+    )
+
+    # Assign an id to every vocab word
+    vocab_id = dict(zip(vocab, range(len(vocab))))
+
+    write_vocab_to_file(vocab)
+    write_term_counts(tokenized_bodies, vocab_id)
