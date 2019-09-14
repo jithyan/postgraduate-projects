@@ -15,6 +15,12 @@ Some of my programming projects during my postgraduate degree at Monash.
 
 > * Parallel Group By
 
+* **Parsing Text - Data Wrangling Asg 1**
+> Using regular expresssions to extract necessary text from XML documents of Patent applications into CSV and JSON formats.
+
+* **Text Preprocessing - Data Wrangling Asg 2**
+> Convert PDF research papers to text, tokenize the entire corpus and preprocess the tokens to generate a vocabulary and sparse term count.
+
 
 * **3-Tier Hotel Booking System**
 > A distributed and parallel programming project that involved building a client , a broker and back-end server applications as part of a hotel reservation system. (_Java_)
